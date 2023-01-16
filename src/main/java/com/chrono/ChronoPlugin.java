@@ -16,9 +16,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.*;
-import net.runelite.api.events.GameStateChanged;
-import net.runelite.api.events.MenuOptionClicked;
-import net.runelite.api.events.WidgetLoaded;
+import net.runelite.api.events.*;
 import net.runelite.api.widgets.*;
 import net.runelite.client.callback.ClientThread;
 import net.runelite.client.callback.Hooks;
@@ -34,6 +32,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ColorScheme;
 import net.runelite.client.ui.overlay.OverlayManager;
 
+import java.awt.*;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
@@ -161,6 +160,7 @@ public class ChronoPlugin extends Plugin {
 		if(!e.getGroup().equals(CONFIG_KEY)) return;
 
 		clientThread.invokeLater(() -> this.updatePrayers());
+		clientThread.invokeLater(() -> this.updateQuests());
 		clientThread.invokeLater(() -> this.updateSkillOverlays());
 
 		regionLocker.readConfig();
@@ -212,6 +212,16 @@ public class ChronoPlugin extends Plugin {
 		else if (e.getGroupId() == WidgetInfo.RESIZABLE_VIEWPORT_PRAYER_TAB.getGroupId() || e.getGroupId() == WidgetInfo.FIXED_VIEWPORT_PRAYER_TAB.getGroupId()) {
 			this.createPrayerLockWidgets();
 			this.updatePrayers();
+		}
+		else if(e.getGroupId() == WidgetInfo.QUESTLIST_BOX.getGroupId()) {
+			this.updateQuests();
+		}
+	}
+
+	@Subscribe
+	public void onScriptPostFired(ScriptPostFired e) {
+		if(e.getScriptId() == 1340) {
+			clientThread.invokeLater(this::updateQuests);
 		}
 	}
 
@@ -329,6 +339,30 @@ public class ChronoPlugin extends Plugin {
 				newPrayer.setXPositionMode(1);
 				newPrayer.setYPositionMode(1);
 				original.setHidden(true);
+			}
+		}
+	}
+
+	private void updateQuests() {
+		Widget parent = client.getWidget(26148871);
+
+		if(parent == null) return;
+
+		Widget[] quests = parent.getChildren();
+		List<Quest> unlockedQuests = Release.getQuests(config.release());
+
+		for(Widget questWidget : quests) {
+			List<Quest> validQuests = unlockedQuests.stream().filter(q -> q.getName().contains(questWidget.getText())).collect(Collectors.toList());
+
+			// Quest is not unlocked and this is not a header
+			if(validQuests.size() == 0 && questWidget.getFontId() == 494) {
+				questWidget.setHasListener(false);
+				questWidget.setTextColor(Color.GRAY.getRGB());
+			}
+			else if(questWidget.getFontId() == 494 && questWidget.getTextColor() == Color.GRAY.getRGB()) {
+				questWidget.setHasListener(false);
+				int color = validQuests.get(0).getState(client) == QuestState.FINISHED ? Integer.parseInt("dc10d", 16) : Integer.parseInt("ff0000", 16);
+				questWidget.setTextColor(color);
 			}
 		}
 	}
