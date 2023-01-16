@@ -33,7 +33,7 @@ public enum Release {
             null,
             null,
             null,
-            Arrays.asList(Quest.THE_GARDEN_OF_DEATH)
+            null
     ),
     APRIL_2001(
             "April 2001",
