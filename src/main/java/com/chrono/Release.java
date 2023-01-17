@@ -110,6 +110,106 @@ public enum Release {
             null,
             null,
             null
+    ),
+    JANUARY_2002(
+            "January 2002",
+            new GregorianCalendar(2002, Calendar.JANUARY, 31).getTime(),
+            null,
+            null,
+            null,
+            null
+    ),
+    FEBRUARY_2002(
+            "February 2001",
+            new GregorianCalendar(2001, Calendar.FEBRUARY, 28).getTime(),
+            Arrays.asList(10806),
+            null,
+            null,
+            Arrays.asList(Quest.IMP_CATCHER, Quest.PRINCE_ALI_RESCUE)
+    ),
+    MARCH_2002(
+            "March 2001",
+            new GregorianCalendar(2001, Calendar.MARCH, 31).getTime(),
+            null,
+            null,
+            null,
+            null
+    ),
+    APRIL_2002(
+            "April 2001",
+            new GregorianCalendar(2001, Calendar.APRIL, 30).getTime(),
+            null,
+            null,
+            null,
+            null
+    ),
+    MAY_2002(
+            "May 2001",
+            new GregorianCalendar(2001, Calendar.MAY, 31).getTime(),
+            null,
+            null,
+            Arrays.asList(Prayer.THICK_SKIN, Prayer.BURST_OF_STRENGTH, Prayer.CLARITY_OF_THOUGHT, Prayer.ROCK_SKIN,
+                    Prayer.SUPERHUMAN_STRENGTH, Prayer.IMPROVED_REFLEXES, Prayer.RAPID_HEAL, Prayer.RAPID_RESTORE,
+                    Prayer.PROTECT_ITEM, Prayer.STEEL_SKIN, Prayer.ULTIMATE_STRENGTH, Prayer.INCREDIBLE_REFLEXES,
+                    Prayer.PROTECT_FROM_MELEE, Prayer.PROTECT_FROM_MISSILES
+            ),
+            Arrays.asList(Quest.GOBLIN_DIPLOMACY)
+    ),
+    JUNE_2002(
+            "June 2001",
+            new GregorianCalendar(2001, Calendar.JUNE, 30).getTime(),
+            null,
+            null,
+            null,
+            Arrays.asList(Quest.PIRATES_TREASURE)
+    ),
+    JULY_2002(
+            "July 2001",
+            new GregorianCalendar(2001, Calendar.JULY, 31).getTime(),
+            null,
+            null,
+            null,
+            null
+    ),
+    AUGUST_2002(
+            "August 2001",
+            new GregorianCalendar(2001, Calendar.AUGUST, 31).getTime(),
+            null,
+            null,
+            null,
+            null
+    ),
+    SEPTEMBER_2002(
+            "September 2001",
+            new GregorianCalendar(2001, Calendar.SEPTEMBER, 30).getTime(),
+            null,
+            null,
+            null,
+            Arrays.asList(Quest.DRAGON_SLAYER_I)
+    ),
+    OCTOBER_2002(
+            "October 2001",
+            new GregorianCalendar(2001, Calendar.OCTOBER, 31).getTime(),
+            null,
+            null,
+            null,
+            null
+    ),
+    NOVEMBER_2002(
+            "November 2001",
+            new GregorianCalendar(2001, Calendar.NOVEMBER, 30).getTime(),
+            null,
+            null,
+            null,
+            null
+    ),
+    DECEMBER_2002(
+            "December 2001",
+            new GregorianCalendar(2001, Calendar.DECEMBER, 31).getTime(),
+            null,
+            null,
+            null,
+            null
     );
 
     @Getter
