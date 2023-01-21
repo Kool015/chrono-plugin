@@ -17,7 +17,8 @@ public enum Release {
         null,
         Arrays.asList(Quest.COOKS_ASSISTANT, Quest.DEMON_SLAYER, Quest.THE_RESTLESS_GHOST, Quest.ROMEO__JULIET, Quest.SHIELD_OF_ARRAV, Quest.SHEEP_SHEARER,
                 Quest.ERNEST_THE_CHICKEN, Quest.VAMPYRE_SLAYER
-        )
+        ),
+        Arrays.asList(ChronoSpell.CONFUSE)
     ),
     FEBRUARY_2001(
             "February 2001",
@@ -25,11 +26,13 @@ public enum Release {
             Arrays.asList(10806),
             null,
             null,
-            Arrays.asList(Quest.IMP_CATCHER, Quest.PRINCE_ALI_RESCUE)
+            Arrays.asList(Quest.IMP_CATCHER, Quest.PRINCE_ALI_RESCUE),
+            null
     ),
     MARCH_2001(
             "March 2001",
             new GregorianCalendar(2001, Calendar.MARCH, 31).getTime(),
+            null,
             null,
             null,
             null,
@@ -38,6 +41,7 @@ public enum Release {
     APRIL_2001(
             "April 2001",
             new GregorianCalendar(2001, Calendar.APRIL, 30).getTime(),
+            null,
             null,
             null,
             null,
@@ -53,7 +57,10 @@ public enum Release {
                     Prayer.PROTECT_ITEM, Prayer.STEEL_SKIN, Prayer.ULTIMATE_STRENGTH, Prayer.INCREDIBLE_REFLEXES,
                     Prayer.PROTECT_FROM_MELEE, Prayer.PROTECT_FROM_MISSILES
             ),
-            Arrays.asList(Quest.GOBLIN_DIPLOMACY)
+            Arrays.asList(Quest.GOBLIN_DIPLOMACY),
+            Arrays.asList(ChronoSpell.WIND_STRIKE, ChronoSpell.WATER_STRIKE, ChronoSpell.EARTH_STRIKE, ChronoSpell.FIRE_STRIKE, ChronoSpell.WEAKEN,
+                    ChronoSpell.LVL_1_ENCHANT
+            )
     ),
     JUNE_2001(
             "June 2001",
@@ -61,11 +68,13 @@ public enum Release {
             null,
             null,
             null,
-            Arrays.asList(Quest.PIRATES_TREASURE)
+            Arrays.asList(Quest.PIRATES_TREASURE),
+            null
     ),
     JULY_2001(
             "July 2001",
             new GregorianCalendar(2001, Calendar.JULY, 31).getTime(),
+            null,
             null,
             null,
             null,
@@ -77,6 +86,7 @@ public enum Release {
             null,
             null,
             null,
+            null,
             null
     ),
     SEPTEMBER_2001(
@@ -85,11 +95,13 @@ public enum Release {
             null,
             null,
             null,
-            Arrays.asList(Quest.DRAGON_SLAYER_I)
+            Arrays.asList(Quest.DRAGON_SLAYER_I),
+            null
     ),
     OCTOBER_2001(
             "October 2001",
             new GregorianCalendar(2001, Calendar.OCTOBER, 31).getTime(),
+            null,
             null,
             null,
             null,
@@ -101,11 +113,13 @@ public enum Release {
             null,
             null,
             null,
+            null,
             null
     ),
     DECEMBER_2001(
             "December 2001",
             new GregorianCalendar(2001, Calendar.DECEMBER, 31).getTime(),
+            null,
             null,
             null,
             null,
@@ -117,6 +131,7 @@ public enum Release {
             null,
             null,
             null,
+            null,
             null
     ),
     FEBRUARY_2002(
@@ -125,11 +140,13 @@ public enum Release {
             Arrays.asList(10806),
             null,
             null,
-            Arrays.asList(Quest.IMP_CATCHER, Quest.PRINCE_ALI_RESCUE)
+            Arrays.asList(Quest.IMP_CATCHER, Quest.PRINCE_ALI_RESCUE),
+            null
     ),
     MARCH_2002(
             "March 2001",
             new GregorianCalendar(2001, Calendar.MARCH, 31).getTime(),
+            null,
             null,
             null,
             null,
@@ -138,6 +155,7 @@ public enum Release {
     APRIL_2002(
             "April 2001",
             new GregorianCalendar(2001, Calendar.APRIL, 30).getTime(),
+            null,
             null,
             null,
             null,
@@ -153,7 +171,8 @@ public enum Release {
                     Prayer.PROTECT_ITEM, Prayer.STEEL_SKIN, Prayer.ULTIMATE_STRENGTH, Prayer.INCREDIBLE_REFLEXES,
                     Prayer.PROTECT_FROM_MELEE, Prayer.PROTECT_FROM_MISSILES
             ),
-            Arrays.asList(Quest.GOBLIN_DIPLOMACY)
+            Arrays.asList(Quest.GOBLIN_DIPLOMACY),
+            null
     ),
     JUNE_2002(
             "June 2001",
@@ -161,11 +180,13 @@ public enum Release {
             null,
             null,
             null,
-            Arrays.asList(Quest.PIRATES_TREASURE)
+            Arrays.asList(Quest.PIRATES_TREASURE),
+            null
     ),
     JULY_2002(
             "July 2001",
             new GregorianCalendar(2001, Calendar.JULY, 31).getTime(),
+            null,
             null,
             null,
             null,
@@ -177,6 +198,7 @@ public enum Release {
             null,
             null,
             null,
+            null,
             null
     ),
     SEPTEMBER_2002(
@@ -185,11 +207,13 @@ public enum Release {
             null,
             null,
             null,
-            Arrays.asList(Quest.DRAGON_SLAYER_I)
+            Arrays.asList(Quest.DRAGON_SLAYER_I),
+            null
     ),
     OCTOBER_2002(
             "October 2001",
             new GregorianCalendar(2001, Calendar.OCTOBER, 31).getTime(),
+            null,
             null,
             null,
             null,
@@ -201,11 +225,13 @@ public enum Release {
             null,
             null,
             null,
+            null,
             null
     ),
     DECEMBER_2002(
             "December 2001",
             new GregorianCalendar(2001, Calendar.DECEMBER, 31).getTime(),
+            null,
             null,
             null,
             null,
@@ -224,14 +250,17 @@ public enum Release {
     private List<Prayer> prayers;
     @Getter
     private List<Quest> quests;
+    @Getter
+    private List<ChronoSpell> spells;
 
-    Release(String name, Date date, List<Integer> regions, List<Skill> skills, List<Prayer> prayers, List<Quest> quests) {
+    Release(String name, Date date, List<Integer> regions, List<Skill> skills, List<Prayer> prayers, List<Quest> quests, List<ChronoSpell> spells) {
         this.name = name;
         this.date = date;
         this.skills = skills;
         this.regions = regions;
         this.prayers = prayers;
         this.quests = quests;
+        this.spells = spells;
     }
 
     public static List<Integer> getRegions(Release release) {
@@ -280,5 +309,17 @@ public enum Release {
         }
 
         return quests;
+    }
+
+    public static List<ChronoSpell> getSpells(Release release) {
+        Release[] releases = Release.values();
+        List<ChronoSpell> spells = new ArrayList<>();
+
+        for(Release r : releases) {
+            if(r.spells != null) spells.addAll(r.getSpells());
+            if(r.equals(release)) break;
+        }
+
+        return spells;
     }
 }

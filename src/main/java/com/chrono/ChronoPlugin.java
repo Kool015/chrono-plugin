@@ -163,6 +163,18 @@ public class ChronoPlugin extends Plugin {
 		clientThread.invokeLater(() -> this.updateQuests());
 		clientThread.invokeLater(() -> this.updateSkillOverlays());
 
+		clientThread.invokeLater(() -> {
+			Widget w = client.getWidget(14286848);
+			Object[] onLoadListener = w.getOnInvTransmitListener();
+
+			if (onLoadListener == null)
+			{
+				return;
+			}
+
+			client.runScript(onLoadListener);
+		});
+
 		regionLocker.readConfig();
 		regionLocker.setRegions(Release.getRegions(config.release()), RegionTypes.UNLOCKED);
 	}
@@ -186,6 +198,16 @@ public class ChronoPlugin extends Plugin {
 					e.consume();
 					client.playSoundEffect(SOUND_EFFECT_INACTIVE);
 				}
+			}
+		}
+
+		if(e.getMenuOption().equals("Cast")) {
+			List<ChronoSpell> unlockedSpells = Release.getSpells(config.release());
+			List<ChronoSpell> validSpells = unlockedSpells.stream().filter(s -> e.getMenuTarget().contains(s.getName())).collect(Collectors.toList());
+
+			if(validSpells.size() == 0) {
+				e.consume();
+				client.playSoundEffect(SOUND_EFFECT_INACTIVE);
 			}
 		}
 
@@ -216,12 +238,18 @@ public class ChronoPlugin extends Plugin {
 		else if(e.getGroupId() == WidgetInfo.QUESTLIST_BOX.getGroupId()) {
 			this.updateQuests();
 		}
+		else if(e.getGroupId() == 218) {
+			this.updateSpells();
+		}
 	}
 
 	@Subscribe
 	public void onScriptPostFired(ScriptPostFired e) {
 		if(e.getScriptId() == 1340) {
 			clientThread.invokeLater(this::updateQuests);
+		}
+		else if(e.getScriptId() == 2610) {
+			clientThread.invokeLater(this::updateSpells);
 		}
 	}
 
@@ -340,6 +368,23 @@ public class ChronoPlugin extends Plugin {
 				newPrayer.setYPositionMode(1);
 				original.setHidden(true);
 			}
+		}
+	}
+
+	private void updateSpells() {
+		Widget parent = client.getWidget(14286851);
+
+		if(parent == null) return;
+
+		List<ChronoSpell> unlockedSpells = Release.getSpells(config.release());
+		for(ChronoSpell spell : ChronoSpell.values()) {
+			if(unlockedSpells.contains(spell)) continue;
+
+			Widget spellWidget = client.getWidget(spell.getPackedID());
+
+			if(spellWidget == null) continue;
+
+			spellWidget.setSpriteId(spell.getLockedSpriteID());
 		}
 	}
 
