@@ -53,7 +53,7 @@ public class ChronoPlugin extends Plugin {
 
 	private static final int SOUND_EFFECT_FAIL = 2277;
 	private static final int SOUND_EFFECT_INACTIVE = 2673;
-	private static final List<String> MENU_BLACKLIST = Arrays.asList("Use", "Take", "Wield", "Open", "Empty", "Eat", "Wear", "Read", "Check", "Teleport", "Commune", "Drink");
+	private static final List<String> MENU_BLACKLIST = Arrays.asList("Use", "Take", "Wield", "Open", "Empty", "Eat", "Wear", "Read", "Check", "Teleport", "Commune", "Drink", "Bury");
 
 	/* Widget IDs */
 	private static final int PRAYER_TAB = 35454980;

@@ -59,7 +59,11 @@ public enum Release {
             ),
             Arrays.asList(Quest.GOBLIN_DIPLOMACY),
             Arrays.asList(ChronoSpell.WIND_STRIKE, ChronoSpell.WATER_STRIKE, ChronoSpell.EARTH_STRIKE, ChronoSpell.FIRE_STRIKE, ChronoSpell.WEAKEN,
-                    ChronoSpell.LVL_1_ENCHANT
+                    ChronoSpell.LVL_1_ENCHANT, ChronoSpell.LVL_2_ENCHANT, ChronoSpell.LVL_4_ENCHANT, ChronoSpell.LVL_3_ENCHANT,
+                    ChronoSpell.WIND_BOLT, ChronoSpell.WIND_BLAST, ChronoSpell.WATER_BLAST, ChronoSpell.WATER_BOLT, ChronoSpell.FIRE_BLAST,
+                    ChronoSpell.FIRE_BOLT, ChronoSpell.EARTH_BLAST, ChronoSpell.EARTH_BOLT, ChronoSpell.TELEKINETIC_GRAB, ChronoSpell.FALADOR_TELEPORT,
+                    ChronoSpell.VARROCK_TELEPORT, ChronoSpell.LUMBRIDGE_TELEPORT, ChronoSpell.HIGH_LEVEL_ALCHEMY, ChronoSpell.LOW_LEVEL_ALCHEMY,
+                    ChronoSpell.CRUMBLE_UNDEAD, ChronoSpell.SUPERHEAT_ITEM, ChronoSpell.BONES_TO_BANANAS
             )
     ),
     JUNE_2001(
@@ -135,26 +139,29 @@ public enum Release {
             null
     ),
     FEBRUARY_2002(
-            "February 2001",
-            new GregorianCalendar(2001, Calendar.FEBRUARY, 28).getTime(),
+            "February 2002",
+            new GregorianCalendar(2002, Calendar.FEBRUARY, 28).getTime(),
             Arrays.asList(10806),
             null,
             null,
             Arrays.asList(Quest.IMP_CATCHER, Quest.PRINCE_ALI_RESCUE),
-            null
+            Arrays.asList(ChronoSpell.LVL_5_ENCHANT)
     ),
     MARCH_2002(
-            "March 2001",
-            new GregorianCalendar(2001, Calendar.MARCH, 31).getTime(),
+            "March 2002",
+            new GregorianCalendar(2002, Calendar.MARCH, 31).getTime(),
             null,
             null,
             null,
             null,
-            null
+            Arrays.asList(ChronoSpell.WIND_WAVE, ChronoSpell.EARTH_WAVE, ChronoSpell.WATER_WAVE, ChronoSpell.FIRE_WAVE,
+                    ChronoSpell.CHARGE_AIR_ORB, ChronoSpell.CHARGE_EARTH_ORB, ChronoSpell.CHARGE_FIRE_ORB, ChronoSpell.CHARGE_WATER_ORB,
+                    ChronoSpell.CAMELOT_TELEPORT
+            )
     ),
     APRIL_2002(
-            "April 2001",
-            new GregorianCalendar(2001, Calendar.APRIL, 30).getTime(),
+            "April 2002",
+            new GregorianCalendar(2002, Calendar.APRIL, 30).getTime(),
             null,
             null,
             null,
@@ -162,8 +169,8 @@ public enum Release {
             null
     ),
     MAY_2002(
-            "May 2001",
-            new GregorianCalendar(2001, Calendar.MAY, 31).getTime(),
+            "May 2002",
+            new GregorianCalendar(2002, Calendar.MAY, 31).getTime(),
             null,
             null,
             Arrays.asList(Prayer.THICK_SKIN, Prayer.BURST_OF_STRENGTH, Prayer.CLARITY_OF_THOUGHT, Prayer.ROCK_SKIN,
@@ -175,8 +182,8 @@ public enum Release {
             null
     ),
     JUNE_2002(
-            "June 2001",
-            new GregorianCalendar(2001, Calendar.JUNE, 30).getTime(),
+            "June 2002",
+            new GregorianCalendar(2002, Calendar.JUNE, 30).getTime(),
             null,
             null,
             null,
@@ -184,8 +191,8 @@ public enum Release {
             null
     ),
     JULY_2002(
-            "July 2001",
-            new GregorianCalendar(2001, Calendar.JULY, 31).getTime(),
+            "July 2002",
+            new GregorianCalendar(2002, Calendar.JULY, 31).getTime(),
             null,
             null,
             null,
@@ -193,17 +200,17 @@ public enum Release {
             null
     ),
     AUGUST_2002(
-            "August 2001",
-            new GregorianCalendar(2001, Calendar.AUGUST, 31).getTime(),
+            "August 2002",
+            new GregorianCalendar(2002, Calendar.AUGUST, 31).getTime(),
             null,
             null,
             null,
             null,
-            null
+            Arrays.asList(ChronoSpell.ARDOUGNE_TELEPORT)
     ),
     SEPTEMBER_2002(
-            "September 2001",
-            new GregorianCalendar(2001, Calendar.SEPTEMBER, 30).getTime(),
+            "September 2002",
+            new GregorianCalendar(2002, Calendar.SEPTEMBER, 30).getTime(),
             null,
             null,
             null,
@@ -211,17 +218,19 @@ public enum Release {
             null
     ),
     OCTOBER_2002(
-            "October 2001",
-            new GregorianCalendar(2001, Calendar.OCTOBER, 31).getTime(),
+            "October 2002",
+            new GregorianCalendar(2002, Calendar.OCTOBER, 31).getTime(),
             null,
             null,
             null,
             null,
-            null
+            Arrays.asList(
+                    ChronoSpell.ENFEEBLE, ChronoSpell.STUN, ChronoSpell.VULNERABILITY
+            )
     ),
     NOVEMBER_2002(
-            "November 2001",
-            new GregorianCalendar(2001, Calendar.NOVEMBER, 30).getTime(),
+            "November 2002",
+            new GregorianCalendar(2002, Calendar.NOVEMBER, 30).getTime(),
             null,
             null,
             null,
@@ -229,8 +238,8 @@ public enum Release {
             null
     ),
     DECEMBER_2002(
-            "December 2001",
-            new GregorianCalendar(2001, Calendar.DECEMBER, 31).getTime(),
+            "December 2002",
+            new GregorianCalendar(2002, Calendar.DECEMBER, 31).getTime(),
             null,
             null,
             null,
