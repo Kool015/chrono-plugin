@@ -121,7 +121,7 @@ public class ChronoPlugin extends Plugin {
 	protected void startUp() {
 		overlayManager.add(itemOverlay);
 		regionLocker = new RegionLocker(client, config, configManager, this);
-		regionLocker.setRegions(Release.getRegions(config.release()), RegionTypes.UNLOCKED);
+		regionLocker.setRegions(config.release().getRegions(), RegionTypes.UNLOCKED);
 		overlayManager.add(regionLockerOverlay);
 		overlayManager.add(regionBorderOverlay);
 		hooks.registerRenderableDrawListener(drawListener);
@@ -134,7 +134,6 @@ public class ChronoPlugin extends Plugin {
 		overlayManager.remove(itemOverlay);
 		overlayManager.remove(regionLockerOverlay);
 		overlayManager.remove(regionBorderOverlay);
-		regionLocker.setRegions(config.release().getRegions(), RegionTypes.UNLOCKED);
 		hooks.unregisterRenderableDrawListener(drawListener);
 	}
 
@@ -176,7 +175,7 @@ public class ChronoPlugin extends Plugin {
 		});
 
 		regionLocker.readConfig();
-		regionLocker.setRegions(Release.getRegions(config.release()), RegionTypes.UNLOCKED);
+		regionLocker.setRegions(config.release().getRegions(), RegionTypes.UNLOCKED);
 	}
 
 	@Subscribe
@@ -218,8 +217,10 @@ public class ChronoPlugin extends Plugin {
 			int id = e.getItemId() > -1 ? e.getItemId() : e.getId();
 
 			if(!isItemUnlocked(id)) {
-				e.consume();
 				EntityDefinition def = EntityDefinition.itemDefinitions.get(id);
+				if(def == null) return;
+
+				e.consume();
 				String was = def.getName().endsWith("s") ? "were" : "was";
 				addWarningMessage(def.getName()+" "+was+" released after "+config.release().getName()+".", true);
 			}
