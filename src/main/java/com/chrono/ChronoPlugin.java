@@ -211,10 +211,12 @@ public class ChronoPlugin extends Plugin {
 		}
 
 		if(MENU_BLACKLIST.contains(e.getMenuOption())) {
+			if(e.getItemId() < 0) return;
+
 			// Catch a weird special case where it says the item ID is 0 when theres no item
 			if(e.getItemId() == 0 && !e.getMenuTarget().equals("Dwarf Remains")) return;
 
-			int id = e.getItemId() > -1 ? e.getItemId() : e.getId();
+			int id = e.getItemId();
 
 			if(!isItemUnlocked(id)) {
 				EntityDefinition def = EntityDefinition.itemDefinitions.get(id);
