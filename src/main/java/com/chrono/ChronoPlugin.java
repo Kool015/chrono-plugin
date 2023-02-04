@@ -262,6 +262,10 @@ public class ChronoPlugin extends Plugin {
 		{
 			NPC npc = (NPC) renderable;
 
+			if(npc.getInteracting() == client.getLocalPlayer()) {
+				return true;
+			}
+
 			try {
 				return EntityDefinition.isMonsterUnlocked(npc.getId(), config.release().getDate());
 			} catch(ParseException e) {
