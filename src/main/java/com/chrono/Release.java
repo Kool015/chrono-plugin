@@ -9,16 +9,16 @@ import net.runelite.api.widgets.WidgetInfo;
 import java.util.*;
 
 public enum Release {
-    JANUARY04_2001(
+    _04_JANUARY_2001(
         "04 January 2001",
-        new GregorianCalendar(2001, Calendar.JANUARY, 4).getTime(),
+        new GregorianCalendar(2001, Calendar.JANUARY, 5).getTime(),
         Arrays.asList(12337,12338,12339,12341,12342,12593,12594,12595,12596,12597,12849,12850,12851,12852,12853,12854,13106,13107,13108,13109,13110),
         Arrays.asList(Skill.HITPOINTS, Skill.ATTACK, Skill.STRENGTH, Skill.DEFENCE, Skill.RANGED, Skill.PRAYER, Skill.MAGIC, Skill.MINING, Skill.SMITHING, Skill.COOKING, Skill.FIREMAKING, Skill.WOODCUTTING, Skill.CRAFTING),
         null,
         Arrays.asList(Quest.COOKS_ASSISTANT, Quest.DEMON_SLAYER, Quest.THE_RESTLESS_GHOST, Quest.ROMEO__JULIET, Quest.SHIELD_OF_ARRAV, Quest.SHEEP_SHEARER),
         Arrays.asList(ChronoSpell.CONFUSE,ChronoSpell.WIND_BOLT)
     ),
-    JANUARY_28_2001(
+    _28_JANUARY_2001(
             "28 January 2001",
             new GregorianCalendar(2001, Calendar.FEBRUARY, 28).getTime(),
             Arrays.asList(12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
@@ -27,7 +27,7 @@ public enum Release {
             Arrays.asList(Quest.ERNEST_THE_CHICKEN, Quest.VAMPYRE_SLAYER),
             null
     ),
-    FEBRUARY_28_2001(
+    _28_FEBRUARY_2001(
             "28 February 2001",
             new GregorianCalendar(2001, Calendar.FEBRUARY, 28).getTime(),
             Arrays.asList(12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
@@ -36,7 +36,7 @@ public enum Release {
             Arrays.asList(Quest.IMP_CATCHER, Quest.PRINCE_ALI_RESCUE),
             null
     ),
-    MARCH_17_2001(
+    _17_MARCH_2001(
             "17 March 2001",
             new GregorianCalendar(2001, Calendar.MARCH, 17).getTime(),
             Arrays.asList(12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12598,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
@@ -45,7 +45,7 @@ public enum Release {
             null,
             null
     ),
-    APRIL_06_2001(
+    _06_APRIL_2001(
             "06 April 2001",
             new GregorianCalendar(2001, Calendar.APRIL, 6).getTime(),
             Arrays.asList(11825,11826,11827,11828,11829,11830,12081,12082,12083,12084,12085,12086,12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12598,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
@@ -54,7 +54,7 @@ public enum Release {
             Arrays.asList(Quest.DORICS_QUEST, Quest.BLACK_KNIGHTS_FORTRESS, Quest.WITCHS_POTION, Quest.THE_KNIGHTS_SWORD),
             null
     ),
-    May_8_2001(
+    _08_May_2001(
             "08 May 2001",
             new GregorianCalendar(2001, Calendar.MAY, 8).getTime(),
             Arrays.asList(11825,11826,11827,11828,11829,11830,12081,12082,12083,12084,12085,12086,12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12598,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
@@ -63,7 +63,7 @@ public enum Release {
             null,
             null
     ),
-    MAY_24_2001(
+    _24_MAY_2001(
             "24 May 2001",
             new GregorianCalendar(2001, Calendar.MAY, 24).getTime(),
             Arrays.asList(11825,11826,11827,11828,11829,11830,12081,12082,12083,12084,12085,12086,12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12598,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
@@ -83,7 +83,7 @@ public enum Release {
                     ChronoSpell.LOW_LEVEL_ALCHEMY, ChronoSpell.HIGH_LEVEL_ALCHEMY, ChronoSpell.SUPERHEAT_ITEM, ChronoSpell.BONES_TO_BANANAS
             )
     ),
-    JUNE_23_2001(
+    _23_JUNE_2001(
             "23 June 2001",
             new GregorianCalendar(2001, Calendar.JUNE, 23).getTime(),
             Arrays.asList(11313,11569,11825,11826,11827,11828,11829,11830,12081,12082,12083,12084,12085,12086,12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12598,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
