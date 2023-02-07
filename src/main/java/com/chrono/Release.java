@@ -47,7 +47,7 @@ public enum Release {
     ),
     _06_APRIL_2001(
             "06 April 2001",
-            new GregorianCalendar(2001, Calendar.APRIL, 6).getTime(),
+            new GregorianCalendar(2001, Calendar.APRIL, 7).getTime(),
             Arrays.asList(11825,11826,11827,11828,11829,11830,12081,12082,12083,12084,12085,12086,12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12598,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
             null,
             null,
