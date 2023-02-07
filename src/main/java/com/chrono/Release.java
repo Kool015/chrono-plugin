@@ -18,7 +18,7 @@ public enum Release {
         Arrays.asList(Quest.COOKS_ASSISTANT, Quest.DEMON_SLAYER, Quest.THE_RESTLESS_GHOST, Quest.ROMEO__JULIET, Quest.SHIELD_OF_ARRAV, Quest.SHEEP_SHEARER,
                 Quest.ERNEST_THE_CHICKEN, Quest.VAMPYRE_SLAYER
         ),
-        Arrays.asList(ChronoSpell.CONFUSE, ChronoSpell.WIND_STRIKE, ChronoSpell.WATER_STRIKE, ChronoSpell.EARTH_STRIKE, ChronoSpell.FIRE_STRIKE)
+        Arrays.asList(ChronoSpell.CONFUSE)
     ),
     FEBRUARY_2001(
             "February 2001",
@@ -58,7 +58,7 @@ public enum Release {
                     Prayer.PROTECT_FROM_MELEE, Prayer.PROTECT_FROM_MISSILES
             ),
             Arrays.asList(Quest.GOBLIN_DIPLOMACY),
-            Arrays.asList(ChronoSpell.WEAKEN,
+            Arrays.asList(ChronoSpell.WEAKEN, ChronoSpell.WIND_STRIKE, ChronoSpell.WATER_STRIKE, ChronoSpell.EARTH_STRIKE, ChronoSpell.FIRE_STRIKE,
                     ChronoSpell.LVL_1_ENCHANT, ChronoSpell.LVL_2_ENCHANT, ChronoSpell.LVL_4_ENCHANT, ChronoSpell.LVL_3_ENCHANT,
                     ChronoSpell.WIND_BOLT, ChronoSpell.WIND_BLAST, ChronoSpell.WATER_BLAST, ChronoSpell.WATER_BOLT, ChronoSpell.FIRE_BLAST,
                     ChronoSpell.FIRE_BOLT, ChronoSpell.EARTH_BLAST, ChronoSpell.EARTH_BOLT, ChronoSpell.TELEKINETIC_GRAB, ChronoSpell.FALADOR_TELEPORT,
@@ -70,7 +70,7 @@ public enum Release {
             "June 2001",
             new GregorianCalendar(2001, Calendar.JUNE, 30).getTime(),
             Arrays.asList(11313,11569,11825,11826,11827,11828,11829,11830,12081,12082,12083,12084,12085,12086,12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12598,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110),
-            null,
+            Arrays.asList(Skill.FISHING),
             null,
             Arrays.asList(Quest.PIRATES_TREASURE),
             null
