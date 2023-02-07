@@ -39,7 +39,7 @@ public interface ChronoConfig extends Config
 	)
 	default Release release()
 	{
-		return Release.JANUARY_2001;
+		return Release.JANUARY04_2001;
 	}
 
 	// Environment Looks
