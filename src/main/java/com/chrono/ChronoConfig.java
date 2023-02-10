@@ -8,7 +8,7 @@ import java.awt.*;
 public interface ChronoConfig extends Config
 {
 	@ConfigSection(
-			name = "General",
+			name = "Set date to travel back to",
 			description = "General settings for the plugin",
 			position = 0
 	)
@@ -32,14 +32,14 @@ public interface ChronoConfig extends Config
 
 	@ConfigItem(
 			keyName = "release",
-			name = "Release",
+			name = "Date",
 			description = "Release you are restricted to",
 			position = 1,
 			section = generalSettings
 	)
 	default Release release()
 	{
-		return Release._04_JANUARY_2001;
+		return Release._04_JAN_2001;
 	}
 
 	// Environment Looks

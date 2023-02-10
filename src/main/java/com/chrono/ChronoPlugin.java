@@ -44,7 +44,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @PluginDescriptor(
 		name = "Chrono",
-		description = "Restrict your account by time",
+		description = "Travel back in time",
 		tags = {"time traveler", "by release"},
 		conflicts = {"Region Locker"}
 )
