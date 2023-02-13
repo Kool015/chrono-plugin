@@ -430,7 +430,7 @@ public enum Release {
             null
     ),
     OCTOBER_2004(
-            "Eadgar's ruse and Shades of Mort'ton",
+            "Edgar's ruse and Shades of Mort'ton",
             new GregorianCalendar(2004, Calendar.OCTOBER, 31).getTime(),
             Arrays.asList(8752,8753,8754,8755,
                     9008,9009,9010,9011,9264,9266,9267,9521,9522,9523,9524,9525,9526,9527,9774,9777,9778,9780,9781,9782,9783,9779,
