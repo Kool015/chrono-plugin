@@ -4,7 +4,7 @@ import net.runelite.client.config.*;
 
 import java.awt.*;
 
-@ConfigGroup(ChronoPlugin.CONFIG_KEY)
+@ConfigGroup(ChronoPlugin.CONFIG_GROUP_KEY)
 public interface ChronoConfig extends Config
 {
 	@ConfigSection(
@@ -31,68 +31,18 @@ public interface ChronoConfig extends Config
 	// General Settings
 
 	@ConfigItem(
-			keyName = "release",
+			keyName = ChronoPlugin.CONFIG_RELEASE_DATE_KEY,
 			name = "Release",
 			description = "Release you are restricted to",
 			position = 1,
 			section = generalSettings
 	)
-	default Release release()
+	default ReleaseDate release()
 	{
-		return Release.JANUARY_2001;
+		return ReleaseDate._04_JANUARY_2001;
 	}
 
 	// Environment Looks
-
-	@ConfigItem(
-			keyName = "renderLockedRegions",
-			name = "Locked chunk shader",
-			description = "Adds graphical change to all chunk that are locked",
-			position = 21,
-			section = environmentSettings
-	)
-	default boolean renderLockedRegions()
-	{
-		return true;
-	}
-
-	@Alpha
-	@ConfigItem(
-			keyName = "shaderGrayColor",
-			name = "Chunk shader color",
-			description = "The color of the locked chunks in the shader",
-			position = 22,
-			section = environmentSettings
-	)
-	default Color shaderGrayColor()
-	{
-		return new Color(0, 31, 77, 204);
-	}
-
-	@Alpha
-	@ConfigItem(
-			keyName = "shaderGrayAmount",
-			name = "Chunk shader opacity",
-			description = "The amount of gray scale that is applied to a locked chunk in the shader (alpha only)",
-			position = 23,
-			section = environmentSettings
-	)
-	default Color shaderGrayAmount()
-	{
-		return new Color(0, 0, 0, 204);
-	}
-
-	@ConfigItem(
-			keyName = "hardBorder",
-			name = "Hard chunk border",
-			description = "True = hard border cutoff, False = chunk border gradient",
-			position = 24,
-			section = environmentSettings
-	)
-	default boolean hardBorder()
-	{
-		return true;
-	}
 
 	@ConfigItem(
 			keyName = "renderRegionBorders",

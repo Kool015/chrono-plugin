@@ -49,14 +49,15 @@ import java.util.stream.Collectors;
 		conflicts = {"Region Locker"}
 )
 public class ChronoPlugin extends Plugin {
-	public static final String CONFIG_KEY = "chrono";
+	public static final String CONFIG_GROUP_KEY = "chrono";
+	public static final String CONFIG_RELEASE_DATE_KEY = "releasedate";
 
 	private static final int SOUND_EFFECT_FAIL = 2277;
 	private static final int SOUND_EFFECT_INACTIVE = 2673;
 	private static final List<String> MENU_BLACKLIST = Arrays.asList("Use", "Take", "Wield","Empty", "Eat", "Wear", "Read", "Check", "Teleport", "Commune", "Drink", "Bury");
 
 	/* Widget IDs */
-	private static final int PRAYER_TAB = 35454980;
+	private static final int PRAYER_TAB = 35454979;
 	private static final int PRAYER_ORB = 10485777;
 	private static final int QUICK_PRAYER = 10485779;
 
@@ -96,6 +97,9 @@ public class ChronoPlugin extends Plugin {
 	private Hooks hooks;
 
 	@Getter
+	private Release currentRelease;
+
+	@Getter
 	@Setter
 	private int hoveredRegion = -1;
 
@@ -119,13 +123,14 @@ public class ChronoPlugin extends Plugin {
 
 	@Override
 	protected void startUp() {
+		loadDefinitions();
+		currentRelease = Release.getReleaseByDate(config.release());
 		overlayManager.add(itemOverlay);
 		regionLocker = new RegionLocker(client, config, configManager, this);
-		regionLocker.setRegions(config.release().getRegions(), RegionTypes.UNLOCKED);
+		regionLocker.setRegions(currentRelease.getRegions(), RegionTypes.UNLOCKED);
 		overlayManager.add(regionLockerOverlay);
 		overlayManager.add(regionBorderOverlay);
 		hooks.registerRenderableDrawListener(drawListener);
-		loadDefinitions();
 	}
 
 	@Override
@@ -141,6 +146,8 @@ public class ChronoPlugin extends Plugin {
 		Type defMapType = new TypeToken<Map<Integer, EntityDefinition>>() {}.getType();
 		EntityDefinition.itemDefinitions = loadDefinitionResource(defMapType, "items.json");
 		EntityDefinition.monsterDefinition = loadDefinitionResource(defMapType, "monsters.json");
+
+		Release.setReleases(loadDefinitionResource(Release[].class, "releases.json"));
 	}
 
 
@@ -156,26 +163,29 @@ public class ChronoPlugin extends Plugin {
 
 	@Subscribe
 	public void onConfigChanged(ConfigChanged e) {
-		if(!e.getGroup().equals(CONFIG_KEY)) return;
+		if(!e.getGroup().equals(CONFIG_GROUP_KEY)) return;
 
-		clientThread.invokeLater(() -> this.updatePrayers());
-		clientThread.invokeLater(() -> this.updateQuests());
-		clientThread.invokeLater(() -> this.updateSkillOverlays());
+		if(e.getKey().equals(CONFIG_RELEASE_DATE_KEY)) {
+			currentRelease = Release.getReleaseByDate(config.release());
+			clientThread.invokeLater(() -> this.updatePrayers());
+			clientThread.invokeLater(() -> this.updateQuests());
+			clientThread.invokeLater(() -> this.updateSkillOverlays());
 
-		clientThread.invokeLater(() -> {
-			Widget w = client.getWidget(14286848);
-			Object[] onLoadListener = w.getOnInvTransmitListener();
+			clientThread.invokeLater(() -> {
+				Widget w = client.getWidget(14286848);
+				Object[] onLoadListener = w.getOnInvTransmitListener();
 
-			if (onLoadListener == null)
-			{
-				return;
-			}
+				if (onLoadListener == null)
+				{
+					return;
+				}
 
-			client.runScript(onLoadListener);
-		});
+				client.runScript(onLoadListener);
+			});
 
-		regionLocker.readConfig();
-		regionLocker.setRegions(config.release().getRegions(), RegionTypes.UNLOCKED);
+			regionLocker.readConfig();
+			regionLocker.setRegions(currentRelease.getRegions(), RegionTypes.UNLOCKED);
+		}
 	}
 
 	@Subscribe
@@ -191,7 +201,7 @@ public class ChronoPlugin extends Plugin {
 			List<ChronoPrayer> prayers = Arrays.stream(ChronoPrayer.values()).filter(p -> e.getMenuTarget().contains(p.getName())).collect(Collectors.toList());
 
 			if(prayers.size() > 0) {
-				List<Prayer> unlockedPrayers = Release.getPrayers(config.release());
+				List<Prayer> unlockedPrayers = Release.getPrayers(currentRelease);
 
 				if(!unlockedPrayers.contains(prayers.get(0).getPrayer())) {
 					e.consume();
@@ -201,7 +211,7 @@ public class ChronoPlugin extends Plugin {
 		}
 
 		if(e.getMenuOption().equals("Cast")) {
-			List<ChronoSpell> unlockedSpells = Release.getSpells(config.release());
+			List<ChronoSpell> unlockedSpells = Release.getSpells(currentRelease);
 			List<ChronoSpell> validSpells = unlockedSpells.stream().filter(s -> e.getMenuTarget().contains(s.getName())).collect(Collectors.toList());
 
 			if(validSpells.size() == 0) {
@@ -254,8 +264,10 @@ public class ChronoPlugin extends Plugin {
 		else if(e.getScriptId() == 2610) {
 			clientThread.invokeLater(this::updateSpells);
 		}
+		else if(e.getScriptId() == 2760 && client.getWidget(PRAYER_TAB) != null) {
+			updatePrayers();
+		}
 	}
-
 	@VisibleForTesting
 	boolean shouldDraw(Renderable renderable, boolean drawingUI) {
 		if (renderable instanceof NPC)
@@ -302,7 +314,7 @@ public class ChronoPlugin extends Plugin {
 		Widget skillWidget = client.getWidget(widgetID);
 		if(skillWidget == null) return;
 
-		boolean isUnlocked = Release.getSkills(config.release()).contains(skill);
+		boolean isUnlocked = Release.getSkills(currentRelease).contains(skill);
 		List<Widget> widgets = new ArrayList<>();
 
 		Widget icon = skillWidget.createChild(-1, WidgetType.GRAPHIC);
@@ -342,8 +354,10 @@ public class ChronoPlugin extends Plugin {
 	}
 
 	private void updatePrayers() {
+		if(prayerLocked == null) return;
+		
 		// Prayers were released in May 2001, despite the skill being available before
-		if(config.release().getDate().before(Release.MAY_2001.getDate())) {
+		if(currentRelease.getDate().getDate().before(ReleaseDate._24_MAY_2001.getDate())) {
 			client.getWidget(QUICK_PRAYER).setHidden(true);
 			client.getWidget(PRAYER_TAB).setHidden(true);
 			prayerLocked.setVisibility(true);
@@ -355,20 +369,19 @@ public class ChronoPlugin extends Plugin {
 			prayerLocked.setVisibility(false);
 			quickPrayer.setVisibility(false);
 
-			List<Prayer> unlockedPrayers = Release.getPrayers(config.release());
+			List<Prayer> unlockedPrayers = Release.getPrayers(currentRelease);
+			int offset = 4; // IDs change due to updates occasionally, but will always change by the same amount
 			for(ChronoPrayer prayer : ChronoPrayer.values()) {
 				if(unlockedPrayers.contains(prayer.getPrayer())) continue;
 
-				Widget parent = client.getWidget(prayer.getPackedID());
+				Widget parent = client.getWidget(prayer.getPackedID() + offset);
 				Widget original = parent.getChild(1);
 
 				if(original == null) continue;
 
 				Widget newPrayer = parent.createChild(-1, WidgetType.GRAPHIC);
 				newPrayer.setSpriteId(prayer.getLockedSpriteID());
-				newPrayer.setSize(original.getWidth(), original.getHeight());
-				newPrayer.setXPositionMode(1);
-				newPrayer.setYPositionMode(1);
+				newPrayer.setSize(parent.getWidth(), parent.getHeight());
 				original.setHidden(true);
 			}
 		}
@@ -379,7 +392,7 @@ public class ChronoPlugin extends Plugin {
 
 		if(parent == null) return;
 
-		List<ChronoSpell> unlockedSpells = Release.getSpells(config.release());
+		List<ChronoSpell> unlockedSpells = Release.getSpells(currentRelease);
 		for(ChronoSpell spell : ChronoSpell.values()) {
 			if(unlockedSpells.contains(spell)) continue;
 
@@ -397,7 +410,7 @@ public class ChronoPlugin extends Plugin {
 		if(parent == null) return;
 
 		Widget[] quests = parent.getChildren();
-		List<Quest> unlockedQuests = Release.getQuests(config.release());
+		List<Quest> unlockedQuests = Release.getQuests(currentRelease);
 
 		for(Widget questWidget : quests) {
 			List<Quest> validQuests = unlockedQuests.stream().filter(q -> q.getName().contains(questWidget.getText())).collect(Collectors.toList());
@@ -418,7 +431,7 @@ public class ChronoPlugin extends Plugin {
 	private void updateSkillOverlays() {
 		if(this.skillOverlays == null) return;
 
-		List<Skill> unlocked = Release.getSkills(config.release());
+		List<Skill> unlocked = Release.getSkills(currentRelease);
 
 		for(Skill skill : Skill.values()) {
 			boolean hide = unlocked.contains(skill);

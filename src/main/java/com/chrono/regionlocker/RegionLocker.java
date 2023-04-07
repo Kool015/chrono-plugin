@@ -72,10 +72,6 @@ public class RegionLocker
 
 	public void readConfig()
 	{
-		renderLockedRegions = config.renderLockedRegions();
-		grayColor = config.shaderGrayColor();
-		grayAmount = config.shaderGrayAmount().getAlpha();
-		hardBorder = config.hardBorder();
 		regions.clear();
 	}
 
@@ -85,10 +81,10 @@ public class RegionLocker
 		List<String> unlockableRegions = new ArrayList<>();
 		List<String> blacklistedRegions = new ArrayList<>();
 
-		config.release().getRegions().forEach(e -> unlockedRegions.add(e+""));
+		chronoPlugin.getCurrentRelease().getRegions().forEach(e -> unlockedRegions.add(e+""));
 
 		String csv = Text.toCSV(unlockedRegions);
-		configManager.setConfiguration(ChronoPlugin.CONFIG_KEY, "unlockedRegions", csv);
+		configManager.setConfiguration(ChronoPlugin.CONFIG_GROUP_KEY, "unlockedRegions", csv);
 	}
 
 	public void setRegions(List<Integer> regs, RegionTypes type)
