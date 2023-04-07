@@ -44,7 +44,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @PluginDescriptor(
 		name = "Chrono",
-		description = "Restrict your account by release",
+		description = "Travel back in time",
 		tags = {"time traveler", "by release"},
 		conflicts = {"Region Locker"}
 )
@@ -273,6 +273,10 @@ public class ChronoPlugin extends Plugin {
 		if (renderable instanceof NPC)
 		{
 			NPC npc = (NPC) renderable;
+
+			if(npc.getInteracting() == client.getLocalPlayer()) {
+				return true;
+			}
 
 			try {
 				return EntityDefinition.isMonsterUnlocked(npc.getId(), config.release().getDate());

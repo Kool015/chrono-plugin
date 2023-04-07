@@ -39,10 +39,6 @@ public class Release {
         RELEASES = Arrays.asList(releases);
 
         int i = 0;
-        for(Release r : RELEASES) {
-            if(r.getDate() == null) log.info("problem with release #" + i);
-            i++;
-        }
     }
 
     public static Release getReleaseByDate(ReleaseDate date) {
