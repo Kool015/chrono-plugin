@@ -58,7 +58,9 @@ public enum ReleaseDate {
     _29_NOVEMBER_2004("29 November 2004", new GregorianCalendar(2004, Calendar.NOVEMBER, 30).getTime()),
     _6_DECEMBER_2004("6 December 2004", new GregorianCalendar(2004, Calendar.DECEMBER, 10).getTime()),
     _13_DECEMBER_2004("13 December 2004", new GregorianCalendar(2004, Calendar.DECEMBER, 20).getTime()),
-    _21_DECEMBER_2004("21 December 2004",new GregorianCalendar(2004, Calendar.DECEMBER, 30).getTime());
+    _21_DECEMBER_2004("21 December 2004",new GregorianCalendar(2004, Calendar.DECEMBER, 30).getTime()),
+    _____("space betwwen 04-05",new GregorianCalendar(2004, Calendar.DECEMBER, 31).getTime()),
+    _05_January_2005("05 January 2005",new GregorianCalendar(2005, Calendar.JANUARY, 31).getTime());
 
     public String name;
     public Date date;
@@ -66,5 +68,5 @@ public enum ReleaseDate {
     ReleaseDate(String name, Date date) {
         this.name = name;
         this.date = date;
-    };
+    }
 }
