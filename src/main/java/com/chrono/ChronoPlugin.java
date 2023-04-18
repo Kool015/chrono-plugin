@@ -361,7 +361,7 @@ public class ChronoPlugin extends Plugin {
 		if(prayerLocked == null) return;
 		
 		// Prayers were released in May 2001, despite the skill being available before
-		if(currentRelease.getDate().getDate().before(ReleaseDate._24_MAY_2001.getDate())) {
+		if(currentRelease.getDate().getDate().before(ReleaseDate.MAY_2001.getDate())) {
 			client.getWidget(QUICK_PRAYER).setHidden(true);
 			client.getWidget(PRAYER_TAB).setHidden(true);
 			prayerLocked.setVisibility(true);
