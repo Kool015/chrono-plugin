@@ -36,7 +36,7 @@ public enum ReleaseDate {
     ___("Empty space separating 02-03", new GregorianCalendar(2002, Calendar.DECEMBER, 31).getTime()),
     JANUARY_2003("January 2003", new GregorianCalendar(2003, Calendar.JANUARY, 31).getTime()),
     //_3_MARCH_2003("3 March 2003", new GregorianCalendar(2003, Calendar.MARCH, 3).getTime()),
-    MARCH_2003("17 March 2003", new GregorianCalendar(2003, Calendar.MARCH, 31).getTime()),
+    MARCH_2003("March 2003", new GregorianCalendar(2003, Calendar.MARCH, 31).getTime()),
     APRIL_2003("April 2003", new GregorianCalendar(2003, Calendar.APRIL, 30).getTime()),
     MAY_2003("May 2003", new GregorianCalendar(2003, Calendar.MAY, 31).getTime()),
     JUNE_2003("June 2003", new GregorianCalendar(2003, Calendar.JUNE, 30).getTime()),
@@ -58,9 +58,9 @@ public enum ReleaseDate {
     NOVEMBER_2004("November 2004", new GregorianCalendar(2004, Calendar.NOVEMBER, 30).getTime()),
     //_6_DECEMBER_2004("6 December 2004", new GregorianCalendar(2004, Calendar.DECEMBER, 10).getTime()),
     //_13_DECEMBER_2004("13 December 2004", new GregorianCalendar(2004, Calendar.DECEMBER, 20).getTime()),
-    DECEMBER_2004("21 December 2004",new GregorianCalendar(2004, Calendar.DECEMBER, 30).getTime()),
+    DECEMBER_2004("December 2004",new GregorianCalendar(2004, Calendar.DECEMBER, 30).getTime()),
     _____("space betwwen 04-05",new GregorianCalendar(2004, Calendar.DECEMBER, 31).getTime()),
-    January_2005("05 January 2005",new GregorianCalendar(2005, Calendar.JANUARY, 31).getTime());
+    JANUARY_2005("January 2005",new GregorianCalendar(2005, Calendar.JANUARY, 31).getTime());
 
     public String name;
     public Date date;
