@@ -45,6 +45,56 @@ public interface ChronoConfig extends Config
 	// Environment Looks
 
 	@ConfigItem(
+			keyName = "renderLockedRegions",
+			name = "Locked chunk shader",
+			description = "Adds graphical change to all chunk that are locked",
+			position = 21,
+			section = environmentSettings
+	)
+	default boolean renderLockedRegions()
+	{
+		return true;
+	}
+
+	@Alpha
+	@ConfigItem(
+			keyName = "shaderGrayColor",
+			name = "Chunk shader color",
+			description = "The color of the locked chunks in the shader",
+			position = 22,
+			section = environmentSettings
+	)
+	default Color shaderGrayColor()
+	{
+		return new Color(0, 31, 77, 204);
+	}
+
+	@Alpha
+	@ConfigItem(
+			keyName = "shaderGrayAmount",
+			name = "Chunk shader opacity",
+			description = "The amount of gray scale that is applied to a locked chunk in the shader (alpha only)",
+			position = 23,
+			section = environmentSettings
+	)
+	default Color shaderGrayAmount()
+	{
+		return new Color(0, 0, 0, 204);
+	}
+
+	@ConfigItem(
+			keyName = "hardBorder",
+			name = "Hard chunk border",
+			description = "True = hard border cutoff, False = chunk border gradient",
+			position = 24,
+			section = environmentSettings
+	)
+	default boolean hardBorder()
+	{
+		return true;
+	}
+
+	@ConfigItem(
 			keyName = "renderRegionBorders",
 			name = "Draw chunk border lines",
 			description = "Draw the chunk borders in the environment marked by lines",

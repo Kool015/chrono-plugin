@@ -72,6 +72,10 @@ public class RegionLocker
 
 	public void readConfig()
 	{
+		renderLockedRegions = config.renderLockedRegions();
+		grayColor = config.shaderGrayColor();
+		grayAmount = config.shaderGrayAmount().getAlpha();
+		hardBorder = config.hardBorder();
 		regions.clear();
 	}
 
