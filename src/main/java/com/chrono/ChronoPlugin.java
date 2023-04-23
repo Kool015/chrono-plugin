@@ -16,6 +16,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.*;
+import net.runelite.api.annotations.Varbit;
 import net.runelite.api.events.*;
 import net.runelite.api.widgets.*;
 import net.runelite.client.callback.ClientThread;
@@ -60,6 +61,8 @@ public class ChronoPlugin extends Plugin {
 	private static final int PRAYER_TAB = 35454979;
 	private static final int PRAYER_ORB = 10485777;
 	private static final int QUICK_PRAYER = 10485779;
+
+	private static final List<Integer> PRAYER_VARBITS = Arrays.asList(Varbits.PRAYER_PROTECT_FROM_MAGIC);
 
 	@Inject
 	private Client client;
@@ -264,10 +267,16 @@ public class ChronoPlugin extends Plugin {
 		else if(e.getScriptId() == 2610) {
 			clientThread.invokeLater(this::updateSpells);
 		}
-		else if(e.getScriptId() == 2760 && client.getWidget(PRAYER_TAB) != null) {
+		else if((e.getScriptId() == 2760 || e.getScriptId() == 461)&& client.getWidget(PRAYER_TAB) != null) {
 			updatePrayers();
 		}
 	}
+
+	@Subscribe
+	public void onVarbitChanged(VarbitChanged e) {
+		if(PRAYER_VARBITS.contains(e.getVarbitId())) updatePrayers();
+	}
+
 	@VisibleForTesting
 	boolean shouldDraw(Renderable renderable, boolean drawingUI) {
 		if (renderable instanceof NPC)
@@ -376,17 +385,13 @@ public class ChronoPlugin extends Plugin {
 			List<Prayer> unlockedPrayers = Release.getPrayers(currentRelease);
 			int offset = 4; // IDs change due to updates occasionally, but will always change by the same amount
 			for(ChronoPrayer prayer : ChronoPrayer.values()) {
-				if(unlockedPrayers.contains(prayer.getPrayer())) continue;
-
 				Widget parent = client.getWidget(prayer.getPackedID() + offset);
 				Widget original = parent.getChild(1);
 
 				if(original == null) continue;
-
-				Widget newPrayer = parent.createChild(-1, WidgetType.GRAPHIC);
-				newPrayer.setSpriteId(prayer.getLockedSpriteID());
-				newPrayer.setSize(parent.getWidth(), parent.getHeight());
-				original.setHidden(true);
+				if(unlockedPrayers.contains(prayer.getPrayer())) original.setSpriteId(prayer.getUnlockedSpriteID());
+				else original.setSpriteId(prayer.getLockedSpriteID());
+				original.revalidate();
 			}
 		}
 	}
