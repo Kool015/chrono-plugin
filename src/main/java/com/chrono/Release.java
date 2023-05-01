@@ -25,20 +25,21 @@ public class Release {
     private List<Quest> quests;
     @Getter
     private List<ChronoSpell> spells;
+    @Getter
+    private String description;
 
-    public Release(ReleaseDate date, List<Integer> regions, List<Skill> skills, List<Prayer> prayers, List<Quest> quests, List<ChronoSpell> spells) {
+    public Release(ReleaseDate date, List<Integer> regions, List<Skill> skills, List<Prayer> prayers, List<Quest> quests, List<ChronoSpell> spells, String description) {
         this.date = date;
         this.skills = skills;
         this.regions = regions;
         this.prayers = prayers;
         this.quests = quests;
         this.spells = spells;
+        this.description = description;
     }
 
     public static void setReleases(Release[] releases) {
         RELEASES = Arrays.asList(releases);
-
-        int i = 0;
     }
 
     public static Release getReleaseByDate(ReleaseDate date) {

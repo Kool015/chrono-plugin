@@ -188,6 +188,8 @@ public class ChronoPlugin extends Plugin {
 
 			regionLocker.readConfig();
 			regionLocker.setRegions(currentRelease.getRegions(), RegionTypes.UNLOCKED);
+
+			configManager.setConfiguration(CONFIG_GROUP_KEY, "description", currentRelease.getDescription());
 		}
 	}
 

@@ -42,6 +42,18 @@ public interface ChronoConfig extends Config
 		return ReleaseDate.JANUARY_2001;
 	}
 
+	@ConfigItem(
+			keyName = "description",
+			name = "Description",
+			description = "Description of the current release",
+			position = 2,
+			section = generalSettings
+	)
+	default String description()
+	{
+		return "";
+	}
+
 	// Environment Looks
 
 	@ConfigItem(
