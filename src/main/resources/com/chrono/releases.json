@@ -6,7 +6,7 @@
             "prayers": null,
             "quests": ["COOKS_ASSISTANT", "DEMON_SLAYER", "THE_RESTLESS_GHOST", "ROMEO__JULIET", "SHIELD_OF_ARRAV", "SHEEP_SHEARER","ERNEST_THE_CHICKEN", "VAMPYRE_SLAYER"],
             "spells": ["CONFUSE","WIND_BOLT"],
-	    "description": "This is an example description"
+	    "description": "Here be a list of notable releases:                                                            1) Choose a month,                        2) Close the plugin,                        3) Reopen to see the list."
     },
     {
             "date": "FEBRUARY_2001",
@@ -15,7 +15,7 @@
             "prayers": null,
             "quests": ["IMP_CATCHER", "PRINCE_ALI_RESCUE"],
             "spells": null,
-	    "description": ""
+	    "description": "February 2001:                                 - Varrock sewers                              - Moss giants                                   - Amulet of accuracy                         - Clay mining                                     - Prince Ali Rescue quest"
     },
     {
             "date": "MARCH_2001",
@@ -24,7 +24,7 @@
             "prayers": null,
             "quests": null,
             "spells": null,
-	    "description": ""
+	    "description": "March 2001:                                      - Cooking guild                                  - Redberry-, Meat-, Apple pies and wine"
     },
     {
             "date": "APRIL_2001",
@@ -33,7 +33,7 @@
             "prayers": null,
             "quests": ["DORICS_QUEST", "BLACK_KNIGHTS_FORTRESS", "WITCHS_POTION", "THE_KNIGHTS_SWORD"],
             "spells": null,
-	    "description": ""
+	    "description": "April 2001:                                         - Ice giants                                        - Kingdom of Asgarnia                      - Doric's quest                                   - Spy quest                                        - Sword quest                                     - Witch's potion quest"
     },
 
     {
@@ -54,7 +54,7 @@
                     "VARROCK_TELEPORT", "LUMBRIDGE_TELEPORT", "FALADOR_TELEPORT",
                     "LOW_LEVEL_ALCHEMY", "HIGH_LEVEL_ALCHEMY", "SUPERHEAT_ITEM", "BONES_TO_BANANAS"
             ],
-            "description": ""
+            "description": "May 2001:                                          - Jewellery and pottery crafting     - Goblin diplomacy quest                - 5 new runes, 28 spells                 - 14 prayers                                      - Ice warriors                                      - Enchanted jewellery                     - A quest list"
     },
     {
             "date": "JUNE_2001",
@@ -63,7 +63,7 @@
             "prayers": null,
             "quests": ["PIRATES_TREASURE"],
             "spells": null,
-	    "description": ""
+	    "description": "June 2001:                                        - Pirate's treasure quest               - 5 fishing styles, 10 kinds of fish - Cooking: 10 fish, 3 pizzas,             stew, cakes                                      - Leather armour"
     },
     {
             "date": "JULY_2001",
@@ -72,7 +72,7 @@
             "prayers": null,
             "quests": null,
             "spells": null,
-	    "description": ""
+	    "description": "July 2001:                                          - Silver ore/bar                                - Blessed holy symbol                       - Rune swords, mace, legs, skirt, chainbody, med helm                       - Bank can now store <=48 items"
     },
     {
             "date": "AUGUST_2001",
@@ -81,7 +81,7 @@
             "prayers": null,
             "quests": null,
             "spells": null,
-	    "description": ""
+	    "description": "August 2001:                                    - Wilderness                                      - Mining guild                                    - Big bones                                        - Runite ore/bar                                 - Greater demons                             - Muddy chest                                    - Remaining rune armour/weapons"
     },
     {
             "date": "SEPTEMBER_2001",
@@ -90,7 +90,7 @@
             "prayers": null,
             "quests": ["DRAGON_SLAYER_I"],
             "spells": null,
-	    "description": ""
+	    "description": "September 2001:                               - Dragon Slayer quest                       - Rune platebody"
     },
     {
             "date": "__",
@@ -99,7 +99,7 @@
             "prayers": null,
             "quests": null,
             "spells": null,
-	    "description": ""
+	    "description": "Oct/Nov/Dec 2001:                             - Black armour                                    - Equipping armour/weapons now require stats"
     },
     {
             "date": "FEBRUARY_2002",

@@ -44,8 +44,8 @@ public interface ChronoConfig extends Config
 
 	@ConfigItem(
 			keyName = "description",
-			name = "Description",
-			description = "Description of the current release",
+			name = "What is new?",
+			description = "List of notable releases this month",
 			position = 2,
 			section = generalSettings
 	)
