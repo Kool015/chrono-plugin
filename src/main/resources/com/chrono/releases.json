@@ -108,7 +108,11 @@
             "prayers": null,
             "quests": ["DRUIDIC_RITUAL", "LOST_CITY", "WITCHS_HOUSE", "HEROES_QUEST", "MERLINS_CRYSTAL"],
             "spells": ["LVL_5_ENCHANT"],
-	    "description": ""
+	    "description": "Februari 2002:                                  - Taverly                                            - Catherby                                         - Herblore:                                       --- 10 herbs and 13 potions             - Big net fishing and sharks            - Enchanted dragonstone jewels   - Lost city quest                              - Druidic ritual quest                        - Witch's house quest                       - Merlin's crystal quest                    - Hero's quest                                   - Dragon longsword and baxe          - 48 -> 96 bank spaces"
+
+
+
+
     },
 
     {
@@ -120,7 +124,7 @@
             "spells": ["CHARGE_AIR_ORB","CHARGE_WATER_ORB","CHARGE_EARTH_ORB","CHARGE_FIRE_ORB",
                        "CAMELOT_TELEPORT", "WIND_WAVE", "WATER_WAVE", "EARTH_WAVE", "FIRE_WAVE"
             ],
-            "description": ""
+            "description": "- March 2002:                                   - Glassblowing and battlestaves    - 4 orb charging spells                      - 4 wave spells                                   - Camelot teleport                             - Seers' village                                   - Scorpion catcher quest                 - Oak willow maple yew magic trees - Fletching:                                        --- bows to magic, arrows to rune  - FM: still only regular logs"
     },
 
     {
@@ -130,7 +134,7 @@
             "prayers": null,
             "quests": ["FAMILY_CREST","TRIBAL_TOTEM"],
             "spells": null,
-	    "description": ""
+	    "description": "April 2002:                                          - Family crest quest                        - Thieving:                                           --- pickpocket, stalls and chests   - Tribal totem quest"
     },
 
     {
@@ -140,7 +144,7 @@
             "prayers": null,
             "quests": ["FISHING_CONTEST", "MONKS_FRIEND"],
             "spells": null,
-	    "description": ""
+	    "description": "May 2002:                                          - Levels 51-56 wildy                          - Fire giants                                       - Curry                                                 - Fishing contest quest                   - Monk's friend quest"
     },
     {
             "date": "JUNE_2002",
@@ -149,7 +153,7 @@
             "prayers": null,
             "quests": ["TEMPLE_OF_IKOV", "CLOCK_TOWER"],
             "spells": null,
-	    "description": ""
+	    "description": "June 2002:                                        - Temple of Ikov quest                      - Clock tower quest                           - Fishing guild"
     },
     {
             "date": "JULY_2002",
@@ -158,7 +162,7 @@
             "prayers": null,
             "quests": ["FIGHT_ARENA", "TREE_GNOME_VILLAGE", "HOLY_GRAIL"],
             "spells": null,
-	    "description": ""
+	    "description": "July 2002:                                         - Fight arena quest                           - Tree gnome village quest               - Holy grail quest                              - Coal trucks                                        - Port Khazard"
     },
     {
             "date": "AUGUST_2002",
@@ -167,7 +171,7 @@
             "prayers": null,
             "quests": ["HAZEEL_CULT", "SHEEP_HERDER", "PLAGUE_CITY"],
             "spells": ["ARDOUGNE_TELEPORT"],
-	    "description": ""
+	    "description": "August 2002:                                    - Hazeel cult quest                            - Sheep herder quest                        - Plague city quest                          - Ardougne teleport"
     },
     {
             "date": "SEPTEMBER_2002",
@@ -176,7 +180,7 @@
             "prayers": null,
             "quests": ["SEA_SLUG", "WATERFALL_QUEST"],
             "spells": null,
-	    "description": ""
+	    "description": "September 2002:                               - Sea slug quest                               - Oyster pearl bolts                          - Tutorial island                                  - Waterfall quest                               - KBD                                                    - Dragon med helm"
     },
     {
             "date": "OCTOBER_2002",
@@ -185,7 +189,7 @@
             "prayers": null,
             "quests": ["BIOHAZARD", "JUNGLE_POTION"],
             "spells": ["ENFEEBLE", "STUN", "VULNERABILITY"],
-	    "description": ""
+	    "description": "October 2002:                                  - Biohazard quest                              - Jungle potion quest                       - Dragon bones                                 - Enfeeble/stun/vulnerability         - Yanille"
     },
     {
             "date": "DECEMBER_2002",
@@ -194,7 +198,7 @@
             "prayers": null,
             "quests": ["ALFRED_GRIMHANDS_BARCRAWL", "THE_GRAND_TREE"],
             "spells": null,
-	    "description": ""
+	    "description": "December 2002:                               - Agility                                          --- gnome, barbarian, yanille DG    - The grand tree quest                     - Gnome cooking                               - Zamorak potion"
     },
     {
             "date": "___",
@@ -212,7 +216,7 @@
             "prayers": null,
             "quests": ["SHILO_VILLAGE"],
             "spells": null,
-	    "description": ""
+	    "description": "January 2003:                                  - Shilo village quest                          - Gnome ball                                      - Wilderness agility"
     },
 
     {
@@ -222,7 +226,7 @@
             "prayers": null,
             "quests": ["UNDERGROUND_PASS","OBSERVATORY_QUEST"],
             "spells": ["IBAN_BLAST"],
-	    "description": ""
+	    "description": "March 2003:                                      - Underground pass quest               - Iban blast                                       - Observatory quest                         - Unholy symbols"
     },
     {
             "date": "APRIL_2003",
@@ -231,7 +235,7 @@
             "prayers": null,
             "quests": ["THE_TOURIST_TRAP"],
             "spells": null,
-	    "description": ""
+	    "description": "April 2003:                                        - Tourist trap quest                           - Throwing knives, darts and spears"
     },
     {
             "date": "MAY_2003",
@@ -240,7 +244,7 @@
             "prayers": null,
             "quests": ["WATCHTOWER", "DWARF_CANNON"],
             "spells": ["WATCHTOWER_TELEPORT"],
-	    "description": ""
+	    "description": "May 2003:                                         - Watchtower quest                           - Watchtower teleport                       - 96 -> 192 bank spaces                   - Iron to Rune pickaxes                   - Dwarf cannon quest"
     },
     {
             "date": "JUNE_2003",
@@ -249,7 +253,7 @@
             "prayers": null,
             "quests": ["MURDER_MYSTERY"],
             "spells": null,
-	    "description": ""
+	    "description": "June 2003:                                         - Murder mystery quest"
     },
     {
             "date": "JULY_2003",
@@ -258,7 +262,7 @@
             "prayers": null,
             "quests": ["THE_DIG_SITE", "GERTRUDES_CAT"],
             "spells": null,
-	    "description": ""
+	    "description": "July 2003:                                         - Digsite quest                                  - Gertrude's cat quest                      - Fishing trawler minigame"
     },
     {
             "date": "AUGUST_2003",
@@ -267,7 +271,7 @@
             "prayers": null,
             "quests": ["LEGENDS_QUEST"],
             "spells": null,
-	    "description": ""
+	    "description": "August 2003:                                    - Legends' quest                               - Dragon square shield"
     },
     {
             "date": "SEPTEMBER_2003",
@@ -276,7 +280,7 @@
             "prayers": null,
             "quests": ["MAGE_ARENA_I"],
             "spells": ["SARADOMIN_STRIKE", "FLAMES_OF_ZAMORAK", "CHARGE", "CLAWS_OF_GUTHIX"],
-	    "description": ""
+	    "description": "September 2003:                              - Mage arena                                     - Charge and 3 god spells                - God cape"
     },
     {
             "date": "____",
@@ -289,7 +293,7 @@
             "prayers": null,
             "quests": null,
             "spells": null,
-	    "description": ""
+	    "description": "Transitioning from RSC to RS2"
     },
     {
             "date": "MARCH_2004",
