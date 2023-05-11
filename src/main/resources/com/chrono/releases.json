@@ -307,7 +307,7 @@
             "prayers": ["PROTECT_FROM_MAGIC"],
             "quests": ["RUNE_MYSTERIES"],
             "spells": ["BIND","SNARE","ENTANGLE"],
-	    "description": ""
+	    "description": "March 2004:                                      - Ranging guild                                 - Duel arena                                      - Runecraft skill                             --- 9 runes to craft, no tiaras        - Bind, snare, entange                      - Protect from magic                        - Paralyze monster to prot melee - Ranged bonuses                             - Studded and dragonhide              - Antifire potions                              - All logs can be burned now           - Dragon dagger/mace                     - Running                                           - Pickaxes are equipable"
     },
     {
             "date": "APRIL_2004",
@@ -321,7 +321,7 @@
             "prayers": null,
             "quests": null,
             "spells": null,
-	    "description": ""
+	    "description": "April 2004:                                         - Enchanted rings                           -- recoil, duel, forge, life, wealth  - Warning popup at Wildy"
     },
     {
             "date": "MAY_2004",
@@ -335,7 +335,7 @@
             "prayers": null,
             "quests": ["BIG_CHOMPY_BIRD_HUNTING"],
             "spells": null,
-	    "description": ""
+	    "description": "May 2004:                                          - Bank spaces 192 -> 240                 - Easy/med/hard clue scrolls          - Big chompy bird hunting quest"
     },
     {
             "date": "JUNE_2004",
@@ -349,7 +349,7 @@
             "prayers": null,
             "quests": ["ELEMENTAL_WORKSHOP_I","PRIEST_IN_PERIL"],
             "spells": null,
-	    "description": ""
+	    "description": "June 2004:                                         - Elemental Workshop quest            - Special attacks introduced            - Priest in peril quest"
     },
     {
             "date": "JULY_2004",
@@ -362,7 +362,7 @@
             "prayers": null,
             "quests": ["NATURE_SPIRIT"],
             "spells": null,
-	    "description": ""
+	    "description": "July 2004:                                         - Nature spirit quest                       - Quest journals                               - Chompy hats                                   - Brimhaven agility arena                - Agility potion                                 - Super restore potion"
     },
 
     {
@@ -376,7 +376,7 @@
             "prayers": null,
             "quests": ["DEATH_PLATEAU","TROLL_STRONGHOLD"],
             "spells": null,
-	    "description": ""
+	    "description": "August 2004:                                    - Death plateau quest                       - Granite shields                              - Troll stronghold quest                    - Law runecrafting"
     },
     {
             "date": "SEPTEMBER_2004",
@@ -390,7 +390,7 @@
             "prayers": null,
             "quests": ["TAI_BWO_WANNAI_TRIO","REGICIDE"],
             "spells": null,
-	    "description": ""
+	    "description": "September 2004:                              - (super) energy potions                 - Magic potions                                  - Kalphite queen                                - Dragon chainbody                           - Tai bwo wannai trio quest               - Regicide quest                               - Halberds"
     },
     {
             "date": "OCTOBER_2004",
@@ -405,7 +405,7 @@
             "prayers": null,
             "quests": ["EADGARS_RUSE","SHADES_OF_MORTTON"],
             "spells": ["TROLLHEIM_TELEPORT"],
-	    "description": ""
+	    "description": "October 2004:                                   - Eadgar's ruse                                - Trollheim teleport                          - Shades of Mort'ton quest             - Splitbark"
     },
     {
             "date": "NOVEMBER_2004",
@@ -420,7 +420,7 @@
             "prayers": null,
             "quests": ["THE_FREMENNIK_TRIALS","HORROR_FROM_THE_DEEP","THRONE_OF_MISCELLANIA"],
             "spells": null,
-	    "description": ""
+	    "description": "November 2004:                               - The Fremennik trials                        - 3 Fremennik helms                           - Horror from the deep                     - God books and pages                     - Games room and necklace              - The throne of Miscellania"
     },
 
 
@@ -437,7 +437,7 @@
             "prayers": null,
             "quests": ["MONKEY_MADNESS_I","HAUNTED_MINE"],
             "spells": null,
-	    "description": ""
+	    "description": "November 2004:                               - Monkey madness quest                 --- No d scim, agility, teak/maho    - Castle wars                                    --- Banners and red decorative      - Haunted mine quest                       - Salve amulet"
     },
   {
             "date": "JANUARY_2005",
@@ -452,6 +452,6 @@
             "prayers": null,
             "quests": ["TROLL_ROMANCE","IN_SEARCH_OF_THE_MYREQUE","CREATURE_OF_FENKENSTRAIN"],
             "spells": ["MAGIC_DART"],
-	    "description": ""
+	    "description": "January 2005:                                  - Troll romance quest                        - Bank space 240 -> 288                  - In search of the Myreque quest   - Karamja dungeon                           - Dragon legs/skirt                          - Slayer                                              --- Burth, mory, edge, fairy, shilo  --- 16 new slayer req monsters      --- Metal boots                                --- Abyssal whip                                - 3 mystic robes                               - Creature of Fenkenstrain quest   - Werewolf agility"
   }
 ]
