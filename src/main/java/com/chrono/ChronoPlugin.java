@@ -30,10 +30,14 @@ import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.ColorScheme;
+import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.ui.overlay.OverlayManager;
+import net.runelite.client.util.ImageUtil;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
@@ -46,8 +50,7 @@ import java.util.stream.Collectors;
 @PluginDescriptor(
 		name = "Chrono",
 		description = "Travel back in time",
-		tags = {"time traveler", "by release"},
-		conflicts = {"Region Locker"}
+		tags = {"time traveler", "by release"}
 )
 public class ChronoPlugin extends Plugin {
 	public static final String CONFIG_GROUP_KEY = "chrono";
@@ -99,6 +102,9 @@ public class ChronoPlugin extends Plugin {
 	@Inject
 	private Hooks hooks;
 
+	@Inject
+	private ClientToolbar clientToolbar;
+
 	@Getter
 	private Release currentRelease;
 
@@ -106,7 +112,8 @@ public class ChronoPlugin extends Plugin {
 	@Setter
 	private int hoveredRegion = -1;
 
-	private RegionLocker regionLocker;
+	private ChronoPanel panel;
+	private NavigationButton navButton;
 
 	private Map<String, List<Widget>> skillOverlays;
 
@@ -129,10 +136,16 @@ public class ChronoPlugin extends Plugin {
 		loadDefinitions();
 		currentRelease = Release.getReleaseByDate(config.release());
 		overlayManager.add(itemOverlay);
-		regionLocker = new RegionLocker(client, config, configManager, this);
-		regionLocker.setRegions(currentRelease.getRegions(), RegionTypes.UNLOCKED);
-		overlayManager.add(regionLockerOverlay);
-		overlayManager.add(regionBorderOverlay);
+
+		panel = new ChronoPanel(this);
+		final BufferedImage icon = ImageUtil.loadImageResource(getClass(), "panel_icon.png");
+		navButton = NavigationButton.builder()
+				.tooltip("Chrono")
+				.priority(5)
+				.icon(icon)
+				.panel(panel)
+				.build();
+		clientToolbar.addNavigation(navButton);
 		hooks.registerRenderableDrawListener(drawListener);
 	}
 
@@ -142,6 +155,7 @@ public class ChronoPlugin extends Plugin {
 		overlayManager.remove(itemOverlay);
 		overlayManager.remove(regionLockerOverlay);
 		overlayManager.remove(regionBorderOverlay);
+		clientToolbar.removeNavigation(navButton);
 		hooks.unregisterRenderableDrawListener(drawListener);
 	}
 
@@ -186,10 +200,7 @@ public class ChronoPlugin extends Plugin {
 				client.runScript(onLoadListener);
 			});
 
-			regionLocker.readConfig();
-			regionLocker.setRegions(currentRelease.getRegions(), RegionTypes.UNLOCKED);
-
-			configManager.setConfiguration(CONFIG_GROUP_KEY, "description", currentRelease.getDescription());
+			panel.updateDescription(currentRelease.getDescription());
 		}
 	}
 
@@ -261,18 +272,9 @@ public class ChronoPlugin extends Plugin {
 		}
 	}
 
-	@Subscribe
-	public void onScriptPostFired(ScriptPostFired e) {
-		if(e.getScriptId() == 1340) {
-			clientThread.invokeLater(this::updateQuests);
-		}
-		else if(e.getScriptId() == 2610) {
-			clientThread.invokeLater(this::updateSpells);
-		}
-		else if((e.getScriptId() == 2760 || e.getScriptId() == 461)&& client.getWidget(PRAYER_TAB) != null) {
-			updatePrayers();
-		}
-	}
+
+
+
 
 	@Subscribe
 	public void onVarbitChanged(VarbitChanged e) {

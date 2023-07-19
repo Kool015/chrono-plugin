@@ -42,18 +42,6 @@ public interface ChronoConfig extends Config
 		return ReleaseDate.JANUARY_2001;
 	}
 
-	@ConfigItem(
-			keyName = "description",
-			name = "What is new?",
-			description = "If the wrong list is showing, close the plugin and reopen it",
-			position = 2,
-			section = generalSettings
-	)
-	default String description()
-	{
-		return "";
-	}
-
 	// Environment Looks
 
 	@ConfigItem(
