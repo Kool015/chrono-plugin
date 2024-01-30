@@ -6,7 +6,7 @@
             "prayers": null,
             "quests": ["COOKS_ASSISTANT", "DEMON_SLAYER", "THE_RESTLESS_GHOST", "ROMEO__JULIET", "SHIELD_OF_ARRAV", "SHEEP_SHEARER","ERNEST_THE_CHICKEN", "VAMPYRE_SLAYER"],
             "spells": ["CONFUSE","WIND_BOLT"],
-	    "description": "Here be a list of notable releases:                                                            1) Choose a month,                        2) Close the plugin,                        3) Reopen to see the list."
+	    "description": "January 2001 releases: --Areas: Misthalin. --Skills: Attack, Strength, Defence, Ranged, Prayer (w/o any use), Magic (w/o any spells), Hitpoints, Crafting, Mining, Smithing, Cooking, Firemaking, Woodcutting. --Quests: Cook's assistant, Sheep shearer, Restless ghost, Romeo and Juliet, Demon slayer, Shield of Arrav, Ernest the chicken, Vampire slayer. --BIS: Adamant sword, almost full adamant via shops. Iron kiteshield via hill giants. --Strongest NPC: Black knight"
     },
     {
             "date": "FEBRUARY_2001",
@@ -15,7 +15,7 @@
             "prayers": null,
             "quests": ["IMP_CATCHER", "PRINCE_ALI_RESCUE"],
             "spells": null,
-	    "description": "February 2001:                                 - Varrock sewers                              - Moss giants                                   - Amulet of accuracy                         - Clay mining                                     - Prince Ali Rescue quest"
+	    "description": "February 2001: --Area: Varrock sewers. --Skills: clay mining. --Quests: Imp catcher and Prince Ali rescue. --BIS: Amulet of accuracy and steel kiteshield --Strongest NPC: Moss giants"
     },
     {
             "date": "MARCH_2001",
@@ -24,7 +24,7 @@
             "prayers": null,
             "quests": null,
             "spells": null,
-	    "description": "March 2001:                                      - Cooking guild                                  - Redberry-, Meat-, Apple pies and wine"
+	    "description": "March 2001: --Area: Cooking guild. --Skills: Redberry-, Meat-, Apple pies and wine"
     },
     {
             "date": "APRIL_2001",

@@ -10,7 +10,7 @@ import java.util.GregorianCalendar;
 public enum ReleaseDate {
     //_04_JANUARY_2001("04 January 2001", new GregorianCalendar(2001, Calendar.JANUARY, 5).getTime()),
     JANUARY_2001("28 January 2001",new GregorianCalendar(2001, Calendar.FEBRUARY, 31).getTime()),
-    FEBRUARY_2001("February 2001",new GregorianCalendar(2001, Calendar.FEBRUARY, 28).getTime()),
+    FEBRUARY_2001("February 2001",new GregorianCalendar(2001, Calendar.MARCH, 1).getTime()),
     MARCH_2001("March 2001",new GregorianCalendar(2001, Calendar.MARCH, 31).getTime()),
     APRIL_2001("April 2001",new GregorianCalendar(2001, Calendar.APRIL, 30).getTime()),
     //_08_MAY_2001("08 May 2001",new GregorianCalendar(2001, Calendar.MAY, 8).getTime()),
