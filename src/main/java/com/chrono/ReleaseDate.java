@@ -60,8 +60,21 @@ public enum ReleaseDate {
     //_13_DECEMBER_2004("13 December 2004", new GregorianCalendar(2004, Calendar.DECEMBER, 20).getTime()),
     DECEMBER_2004("December 2004",new GregorianCalendar(2004, Calendar.DECEMBER, 30).getTime()),
     _____("space betwwen 04-05",new GregorianCalendar(2004, Calendar.DECEMBER, 31).getTime()),
-    JANUARY_2005("January 2005",new GregorianCalendar(2005, Calendar.JANUARY, 31).getTime());
+    JANUARY_2005("January 2005",new GregorianCalendar(2005, Calendar.JANUARY, 31).getTime()),
+    FEBRUARY_2005("February 2005",new GregorianCalendar(2005, Calendar.FEBRUARY, 28).getTime()),
+    MARCH_2005("March 2005",new GregorianCalendar(2005, Calendar.MARCH, 31).getTime()),
+    APRIL_2005("April 2005",new GregorianCalendar(2005, Calendar.APRIL, 30).getTime()),
+    MAY_2005("May 2005",new GregorianCalendar(2005, Calendar.MAY, 31).getTime()),
+    JUNE_2005("June 2005",new GregorianCalendar(2005, Calendar.JUNE, 30).getTime()),
+    JULY_2005("July 2005",new GregorianCalendar(2005, Calendar.JULY, 31).getTime()),
+    AUGUST_2005("August 2005",new GregorianCalendar(2005, Calendar.AUGUST, 31).getTime()),
+    SEPTEMBER_2005("September 2005",new GregorianCalendar(2005, Calendar.SEPTEMBER, 30).getTime()),
+    OCTOBER_2005("October 2005",new GregorianCalendar(2005, Calendar.OCTOBER, 31).getTime()),
+    NOVEMBER_2005("November 2005",new GregorianCalendar(2005, Calendar.NOVEMBER, 30).getTime()),
+    DECEMBER_2005("December 2005",new GregorianCalendar(2005, Calendar.DECEMBER, 31).getTime()),
 
+
+;
     public String name;
     public Date date;
 

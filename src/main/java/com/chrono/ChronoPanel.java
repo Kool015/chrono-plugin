@@ -4,6 +4,7 @@ import net.runelite.client.ui.FontManager;
 import net.runelite.client.ui.PluginPanel;
 
 import javax.swing.*;
+import javax.swing.text.WrappedPlainView;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -37,14 +38,16 @@ public class ChronoPanel extends PluginPanel implements ActionListener {
         title.setHorizontalAlignment(SwingConstants.CENTER);
         add(title, gbc);
 
-        // Set label and button constraints for second row
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 2;
-        gbc.insets = new Insets(5, 0, 5, 3); // add padding
-        myButton = new JButton("Copy Unlocked Region IDs");
-        myButton.addActionListener(this);
-        add(myButton, gbc);
+//        // Set label and button constraints for second row
+//        gbc.gridx = 0;
+//        gbc.gridy = 1;
+//        gbc.gridwidth = 2;
+//        gbc.insets = new Insets(5, 0, 5, 3); // add padding
+//        myButton = new JButton("Copy Unlocked Region IDs");
+//        myButton.addActionListener(this);
+//        add(myButton, gbc);
+
+
 
         // Set label and button constraints for second row
         gbc.gridx = 0;

@@ -6,7 +6,7 @@
             "prayers": null,
             "quests": ["COOKS_ASSISTANT", "DEMON_SLAYER", "THE_RESTLESS_GHOST", "ROMEO__JULIET", "SHIELD_OF_ARRAV", "SHEEP_SHEARER","ERNEST_THE_CHICKEN", "VAMPYRE_SLAYER"],
             "spells": ["CONFUSE","WIND_BOLT"],
-	    "description": "Here be a list of notable releases:                                                            1) Choose a month,                        2) Close the plugin,                        3) Reopen to see the list."
+	    "description": "January 2001 releases: --Areas: Misthalin. --Skills: Attack, Strength, Defence, Ranged, Prayer (w/o any use), Magic (w/o any spells), Hitpoints, Crafting, Mining, Smithing, Cooking, Firemaking, Woodcutting. --Quests: Cook's assistant, Sheep shearer, Restless ghost, Romeo and Juliet, Demon slayer, Shield of Arrav, Ernest the chicken, Vampire slayer. --BIS: Adamant sword, almost full adamant via shops. Iron kiteshield via hill giants. --Strongest NPC: Black knight"
     },
     {
             "date": "FEBRUARY_2001",
@@ -15,7 +15,7 @@
             "prayers": null,
             "quests": ["IMP_CATCHER", "PRINCE_ALI_RESCUE"],
             "spells": null,
-	    "description": "February 2001:                                 - Varrock sewers                              - Moss giants                                   - Amulet of accuracy                         - Clay mining                                     - Prince Ali Rescue quest"
+	    "description": "February 2001: --Area: Varrock sewers. --Skills: clay mining. --Quests: Imp catcher and Prince Ali rescue. --BIS: Amulet of accuracy and steel kiteshield --Strongest NPC: Moss giants"
     },
     {
             "date": "MARCH_2001",
@@ -24,7 +24,7 @@
             "prayers": null,
             "quests": null,
             "spells": null,
-	    "description": "March 2001:                                      - Cooking guild                                  - Redberry-, Meat-, Apple pies and wine"
+	    "description": "March 2001: --Area: Cooking guild. --Skills: Redberry-, Meat-, Apple pies and wine"
     },
     {
             "date": "APRIL_2001",
@@ -108,7 +108,7 @@
             "prayers": null,
             "quests": ["DRUIDIC_RITUAL", "LOST_CITY", "WITCHS_HOUSE", "HEROES_QUEST", "MERLINS_CRYSTAL"],
             "spells": ["LVL_5_ENCHANT"],
-	    "description": "Februari 2002:                                  - Taverly                                            - Catherby                                         - Herblore:                                       --- 10 herbs and 13 potions             - Big net fishing and sharks            - Enchanted dragonstone jewels   - Lost city quest                              - Druidic ritual quest                        - Witch's house quest                       - Merlin's crystal quest                    - Hero's quest                                   - Dragon longsword and baxe          - 48 -> 96 bank spaces"
+	    "description": "February 2002:                                  - Taverly                                            - Catherby                                         - Herblore:                                       --- 10 herbs and 13 potions             - Big net fishing and sharks            - Enchanted dragonstone jewels   - Lost city quest                              - Druidic ritual quest                        - Witch's house quest                       - Merlin's crystal quest                    - Hero's quest                                   - Dragon longsword and baxe          - 48 -> 96 bank spaces"
 
 
 
@@ -453,5 +453,105 @@
             "quests": ["TROLL_ROMANCE","IN_SEARCH_OF_THE_MYREQUE","CREATURE_OF_FENKENSTRAIN"],
             "spells": ["MAGIC_DART"],
 	    "description": "January 2005:                                  - Troll romance quest                        - Bank space 240 -> 288                  - In search of the Myreque quest   - Karamja dungeon                           - Dragon legs/skirt                          - Slayer                                              --- Burth, mory, edge, fairy, shilo  --- 16 new slayer req monsters      --- Metal boots                                --- Abyssal whip                                - 3 mystic robes                               - Creature of Fenkenstrain quest   - Werewolf agility"
+  },
+	{
+            "date": "FEBRUARY_2005",
+            "regions": [14133,14390,14646,14391,14647,13361,13617,13616,13872,12845,13101,13357],
+            "skills": null,
+            "prayers": null,
+            "quests": ["ROVING_ELVES","GHOSTS_AHOY","ONE_SMALL_FAVOUR"],
+            "spells": null,
+	    "description": "February 2005:                - Roving Elves quest                    - Ghosts Ahoy quest                         - One Small Favour quest    - Slayer replacement tasks              - Team Capes               - HAM Hideout         - Crystal Bow and Shield"
+  },
+	{
+            "date": "MARCH_2005",
+            "regions": [],
+            "skills": null,
+            "prayers": null,
+            "quests": ["MOUNTAIN_DAUGHTER","BETWEEN_A_ROCK..."],
+            "spells": ["TELE_BLOCK","TELEOTHER_LUMBRIDGE","TELEOTHER_FALADOR","TELEOTHER_CAMELOT"],
+	    "description": "March 2005:             - Dragon Scimitar from Daga                            - Mountain Daughter Quest                          - Between a Rock... quest                     -Tele other and Tele block spells         - Castle Wars armors         - Lumbridge Swamp caves w/ new slayer monsters                        - Mithril/Adamant arrows and willow and maple short/long sold in Varrock and Rimmington                 - 2005 Easter event"
+  },
+	{
+            "date": "APRIL_2005",
+            "regions": [13358,12844,13100,12843,13099],
+            "skills": null,
+            "prayers": null,
+            "quests": ["THE_FEUD","THE_GOLEM","DESERT_TREASURE_I","ICTHLARIN'S_LITTLE_HELPER"],
+            "spells": null,
+	    "description": "April 2005:      - The Fued quest              - Pollnivneach             - The Golem quest                 - The Ruins of Uzer         - Desert Treasure quest          - Ancient Magicks + Ancient Staff              - Ichlarin's Little Helper quest                - Catspeak amulet            - Sophanem"
+  },
+	{
+            "date": "MAY_2005",
+            "regions": [10810],
+            "skills": null,
+            "prayers": null,
+            "quests": ["TEARS_OF_GUTHIX","ZOGRE_FLESH_EATERS","THE_GIANT_DWARF","THE_LOST_TRIBE"],
+            "spells": null,
+	    "description": "May 2005:              - Tears of Guthix quest and minigame                   - Barrows minigame plus gear           - Zogre Flesh Eaters quest              - Zogre cave and bones             - Disease damage               - The Giant Dwarf quest                 - Keldagrim               - Keldagrim Minecart System (not to the GE)                  - The Lost Tribe quest                - Goblin maze + Mine"
+  },
+	{
+            "date": "JUNE_2005",
+            "regions": [],
+            "skills": null,
+            "prayers": null,
+            "quests": ["MQ:_ENTER_THE_ABYSS","RECRUITMENT_DRIVE"],
+            "spells": null,
+	    "description": "June_2005:              - Seeds, both buying and stealing                  -Enter the Abyss miniquest                 - Zamorakian MAge             - The Abyss          - Rune essence pouches  - Farmking tools             - Birds nests          - Lumbridge Guide         - Wise Old Man in Draynor                - Increased bank space          - Runecrafting tiaras           - Combination runes            - Necklace of binding                      - Rogues Den                       - Rogue armor               - Recruitment Drive quest             - Initiate armor                 - Change respawn to Falador"
+  },
+	{
+            "date": "JULY_2005",
+            "regions": [9265],
+            "skills": ["FARMING"],
+            "prayers": null,
+            "quests": ["MOURNING'S_END_PART_I","FORGETTABLE_TALE..."],
+            "spells": null,
+	    "description": "July 2005:                 - Mourning's End Part 1 quest                 - Forgettable Tale... quest                  - Brewing               - Dwarven Stout(m)             - Magic Carpets in desert                           - Farming skill                       - Extra- and Super-strong antidotes and poisons             - Brewing                - Amulet of nature               - Dairy cows                  - Master farmers in Varrock and Ardougne"
+  },
+	{
+            "date": "AUGUST_2005",
+            "regions": [10042],
+            "skills": null,
+            "prayers": null,
+            "quests": ["GARDEN_OF_TRANQUILLITY"],
+            "spells": null,
+	    "description": "August 2005:              - Garden of Tranquillity quest            - Ring of Charos(a)   - 48 more bank space         - Waterbirth Island + Dungeon (No DKS)          - Fremennik armor           - Tai Bwo Wannai Clean-up minigame and rewards             - Rogue Trader               - Blast Furnace"
+  },
+	{
+            "date": "SEPTEMBER_2005",
+            "regions": [],
+            "skills": null,
+            "prayers": ["RETRIBUTION","REDEMPTION","SMITE"],
+            "quests": ["A_TAIL_OF_TWO_CATS"],
+            "spells": null,
+	    "description": "September 2005:             - New agility shortcuts          - Smite, Redemption, and Retribution prayers           - Cook-X          - Fight Pits         - Bank Pin (lol)"
+  },
+	{
+            "date": "OCTOBER_2005",
+            "regions": [11824],
+            "skills": null,
+            "prayers": null,
+            "quests": ["MOURNING'S_END_PART_II","WANTED!","MQ:SKIPPY_AND_THE_MOGRES","RUM_DEAL"],
+            "spells": ["LVL_6_ENCHANT"],
+	    "description": "October 2005:           - Fight Cave              - Fire Cape           - Obby Cape     - Onyx, Onyx Jewellery, and Enchant Onyx           - Mourning's End 2        - Death Altar and Death Rune crafting             - Dark Beasts           - Wanted! quest          - SKippy and the Mogres miniquest         - Sara brews         - Desert lizards          - new cooking additions           - Gnome Ball Coach         - 2005 Halloween     - Rum Deal quest         - Holy Wrench      - Braindeath Island"
+  },
+	{
+            "date": "NOVEMBER_2005",
+            "regions": [],
+            "skills": null,
+            "prayers": null,
+            "quests": ["SHADOW_OF_THE_STORM","MAKING_HISTORY","RATCATCHERS"],
+            "spells": null,
+	    "description": "November 2005:            -Shadow of the Storm quest              - Making History quest               - Ratcatchers quest        -Rat Pits           - Wily and Lazy cats   - Dagannoth Kings            - Dragon axe (only from DKS)           - DKS rings and equipment       - Darklight"
+  },
+	{
+            "date": "DECEMBER_2005",
+            "regions": [13613,13614,13615],
+            "skills": null,
+            "prayers": null,
+            "quests": ["SPIRITS_OF_THE_ELID","DEVIOUS_MINDS"],
+            "spells": null,
+	    "description": "December 2005:               - Spirits of the Elid quest             - Devious Minds quest               - Nardah       - Zahur herb cleaning        - Tool Leprechauns           - Champion scrolls         - Skeleton Wyverns          - Granite legs        - Christmas 2005"
   }
+	
 ]
