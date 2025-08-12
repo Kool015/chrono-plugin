@@ -513,7 +513,7 @@
             "regions": [10042],
             "skills": null,
             "prayers": null,
-            "quests": [GARDEN_OF_TRANQUILLITY],
+            "quests": ["GARDEN_OF_TRANQUILLITY"],
             "spells": null,
 	    "description": "August 2005:              - Garden of Tranquillity quest            - Ring of Charos(a)   - 48 more bank space         - Waterbirth Island + Dungeon (No DKS)          - Fremennik armor           - Tai Bwo Wannai Clean-up minigame and rewards             - Rogue Trader               - Blast Furnace"
   }
