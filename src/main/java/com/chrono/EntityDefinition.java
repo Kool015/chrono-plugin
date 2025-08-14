@@ -2,7 +2,7 @@ package com.chrono;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-
+import net.runelite.api.NPC;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;

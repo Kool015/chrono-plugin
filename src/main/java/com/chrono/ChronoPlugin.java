@@ -1,5 +1,6 @@
 package com.chrono;
 
+import com.chrono.regionlocker.RegionTypes;
 import com.chrono.ui.UIButton;
 import com.chrono.ui.UILabel;
 import com.google.common.annotations.VisibleForTesting;
@@ -15,6 +16,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.api.*;
+import net.runelite.api.annotations.Varbit;
 import net.runelite.api.events.*;
 import net.runelite.api.widgets.*;
 import net.runelite.client.callback.ClientThread;
