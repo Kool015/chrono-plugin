@@ -1,7 +1,7 @@
 [
     {
             "date": "JANUARY_2001",
-            "regions": [12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110],
+            "regions": [12337,12338,12339,12340,12341,12342,12593,12594,12595,12596,12597,12849,12850,12851,12852,12853,12854,13105,13106,13107,13108,13109,13110,12335],
             "skills": ["HITPOINTS", "ATTACK", "STRENGTH", "DEFENCE", "RANGED", "PRAYER", "MAGIC", "MINING", "SMITHING", "COOKING", "FIREMAKING", "WOODCUTTING", "CRAFTING"],
             "prayers": null,
             "quests": ["COOKS_ASSISTANT", "DEMON_SLAYER", "THE_RESTLESS_GHOST", "ROMEO__JULIET", "SHIELD_OF_ARRAV", "SHEEP_SHEARER","ERNEST_THE_CHICKEN", "VAMPYRE_SLAYER"],
@@ -432,13 +432,22 @@
                     11050,11051,11052,11053,11054,11055,11056,11057,11058,11059,11060,11061,11062,11063,11064,11306,11307,11308,11309,11310,11311,11312,11313,11314,11315,11316,11317,11318,11319,11320,11321,11562,11563,11564,11565,11566,11567,11568,11569,11570,11571,11572,11573,11574,11575,11576,11577,11579,11580,11821,11822,11823,11825,11826,11827,11828,11829,11830,11831,11832,11833,11834,11835,11836,11837,
                     12079,12080,12081,12082,12083,12084,12085,12086,12087,12088,12089,12090,12091,12092,12093,12336,12337,12338,12339,12340,12341,12342,12343,12345,12346,12347,12348,12349,12591,12592,12593,12594,12595,12596,12597,12599,12601,12602,12603,12604,12605,12847,12848,12849,12850,12851,12852,12853,12854,12855,12856,12857,12858,12859,12860,12861,
                     13103,13104,13105,13106,13107,13108,13109,13110,13111,13112,13113,13114,13115,13116,13117,13362,13363,13364,13365,13366,13367,13368,13369,13370,13618,13619,13620,13621,13622,13875,13876,13877,13878,
-                    14134,14390],
+                    14134,14390,9263,9519],
             "skills": null,
             "prayers": null,
             "quests": ["MONKEY_MADNESS_I","HAUNTED_MINE"],
             "spells": null,
 	    "description": "November 2004:                               - Monkey madness quest                 --- No d scim, agility, teak/maho    - Castle wars                                    --- Banners and red decorative      - Haunted mine quest                       - Salve amulet"
     },
+  {
+    "date": "____",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2004 to 2005"
+  },
   {
             "date": "JANUARY_2005",
             "regions": [8752,8753,8754,8755,
@@ -456,7 +465,7 @@
   },
 	{
             "date": "FEBRUARY_2005",
-            "regions": [14133,14390,14646,14391,14647,13361,13617,13616,13872,12845,13101,13357],
+            "regions": [14133,14390,14646,14391,14647,13361,13617,13616,13872,12845,13101,13357,15159,11582,11838,12094,12350,12606,12862,13118,13374,13630,13629,13628,13627,13626,13625,13624,13880,14136,14392,14648,14904,14903,14902,15160,15158,10813,11069],
             "skills": null,
             "prayers": null,
             "quests": ["ROVING_ELVES","GHOSTS_AHOY","ONE_SMALL_FAVOUR"],
@@ -474,7 +483,7 @@
   },
 	{
             "date": "APRIL_2005",
-            "regions": [13358,12844,13100,12843,13099],
+            "regions": [13358,12844,13100,12843,13099,11323],
             "skills": null,
             "prayers": null,
             "quests": ["THE_FEUD","THE_GOLEM","DESERT_TREASURE_I","ICTHLARIN'S_LITTLE_HELPER"],
@@ -483,7 +492,7 @@
   },
 	{
             "date": "MAY_2005",
-            "regions": [10810],
+            "regions": [10810,9775],
             "skills": null,
             "prayers": null,
             "quests": ["TEARS_OF_GUTHIX","ZOGRE_FLESH_EATERS","THE_GIANT_DWARF","THE_LOST_TRIBE"],
@@ -552,6 +561,1256 @@
             "quests": ["SPIRITS_OF_THE_ELID","DEVIOUS_MINDS"],
             "spells": null,
 	    "description": "December 2005:               - Spirits of the Elid quest             - Devious Minds quest               - Nardah       - Zahur herb cleaning        - Tool Leprechauns           - Champion scrolls         - Skeleton Wyverns          - Granite legs        - Christmas 2005"
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2005 to 2006"
+  },
+  {
+    "date": "JANUARY_2006",
+    "regions": [13356,12589],
+    "skills": null,
+    "prayers": null,
+    "quests": ["THE_HAND_IN_THE_SAND","ENAKHRA'S LAMENT"],
+    "spells": null,
+    "description": "January 2006:            - Mage Training Arena         - The Hand in the Sand quest      - Wizards Guild rune store     - Agility Pyramid           - Enakhra's Lament quest       - Granite mining      - Harpie bug swarms       - More baked potatoes"
+  },
+  {
+    "date": "FEBRUARY_2006",
+    "regions": [14384,14383,14382,14381,14640,14638,14637,14896,14893,15152,15149,14128],
+    "skills": null,
+    "prayers": null,
+    "quests": ["CABIN_FEVER","FAIRYTALE_I_-_GROWING_PAINS"],
+    "spells": null,
+    "description": "February 2006:         - Cabin Fever quest     - Mos Le'Harmless (town only, gates closed)      - Fairytale Part 1 quest        - Magic secateurs       - Chaos Elemental boss        - Dragon 2h sword        - Killerwatt Plane       - Garden and Admiral Pies"
+  },
+  {
+    "date": "MARCH_2006",
+    "regions": [13874,14130,13873,14129],
+    "skills": null,
+    "prayers": null,
+    "quests": ["RECIPE_FOR_DISASTER","IN_AID_OF_THE_MYREQUE"],
+    "spells": ["APE_ATOLL_TELEPORT"],
+    "description": "March 2006:          - Giant Mole boss         - Canoes         - Zygomites         - Recipe for Disaster and all associated areas and rewards       - In Aid of the Myreque quest    - Temple Trekking (Burg to Paterdomus only)"
+  },
+  {
+    "date": "APRIL_2006",
+    "regions": [10537,10536,10282,10281,10280,10538,10793,10792,11049,11048,11305,11304,11561,11560,11819,11818,11817,11816,12075,12074,12073,12072],
+    "skills": null,
+    "prayers": null,
+    "quests": ["A_SOUL'S_BANE","RAG_AND_BONE_MAN_I","RAG_AND_BONE_MAN_II"],
+    "spells": null,
+    "description": "April 2006:     - A Soul's Bane quest        - Rag and Bone Man 1 and 2    - Easter 2006         - Pest Control (no Void armor rewards, only combat XP)    - Pure Essence     - Wilderness teleport obelisks"
+  },
+  {
+    "date": "MAY_2006",
+    "regions": [9273,9272],
+    "skills": ["CONSTRUCTION"],
+    "prayers": null,
+    "quests": ["SWAN_SONG","ROYAL_TROUBLE"],
+    "spells": null,
+    "description": "May 2006:     - Player Owned Houses    - Construction Skill  - Swan Song quest        - Piscatoris         - Monk fish       - Royal Trouble quest         - 24 more bank spaces"
+  },
+  {
+    "date": "JUNE_2006",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": ["DEATH_TO_THE_DORGESHUUN"],
+    "spells": null,
+    "description": "June 2006:       - Pest Control herb/seed mineral packs       - Void mace, top, bottom. gloves (no helmets)         - Warriors' Guild (Defenders up to Rune)       - HAM Storeroom    - Bone crossbow"
+  },
+  {
+    "date": "JULY_2006",
+    "regions": [14639,14895,14894,15151,15150,8763,8254,8253,8252,8251,8510,8509,8508,8507,8766,8765,8764,9019,9020,9021,9022,8499,8498,8497,8496,9518,10541,9262,15408,15407,15406,15405],
+    "skills": null,
+    "prayers": null,
+    "quests": ["FAIRYTALE_II_-_CURE_A_QUEEN","LUNAR DIPLOMACY"],
+    "spells": ["CURE_OTHER","CURE_ME","CURE_GROUP","STAT_RESTORE_POT_SHARE","BOOST_POTION_SHARE","ENERGY_TRANSFER","HEAL_OTHER","VENGEANCE_OTHER","VENGEANCE","HEAL_GROUP","MOONCLAN_TELEPORT","TELE_GROUP_MOONCLAN","WATERBIRTH_TELEPORT","TELE_GROUP_WATERBIRTH","BARBARIAN_TELEPORT","TELE_GROUP_BARBARIAN","KHAZARD_TELEPORT","TELE_GROUP_KHAZARD","FISHING_GUILD_TELEPORT","TELE_GROUP_FISHING_GUILD","CATHERBY_TELEPORT","TELE_GROUP_CATHERBY","ICE_PLATEAU_TELEPORT","TELE_GROUP_ICE_PLATEAU","BAKE_PIE","CURE_PLANT","NPC_CONTACT","SUPERGLASS_MAKE","STRING_JEWELLERY","MAGIC_IMBUE","FERTILE_SOIL"],
+    "description": "July 2006:      - Stronghold of Security        - Fairytale Part 2 quest        - Lunar Diplomacy quest     - Lunar Isle     - Fairyring teleports    - Trouble Brewing minigame      - Cave Horrors and Black Mask       - Pyramid Plunder    - Lunar magicks      - Astral runes and runecrafting       - 7 new crossbows(Bronze to Rune)      - Bolts (Blurite, Silver, up to Runite)        - Enchanted bolts up to Runite"
+  },
+  {
+    "date": "AUGUST_2006",
+    "regions": null,
+    "skills": null,
+    "prayers": ["SHARP_EYE","HAWK_EYE","EAGLE_EYE","MYSTIC_LORE","MYSTIC_WILL","MYSTIC_MIGHT"],
+    "quests": ["THE_EYES_OF_GLOUPHRIE"],
+    "spells": null,
+    "description": "August 2006:       - Gnome cuisine      - The Eyes of Gluophrie quest         - Crystal saw      - New ranged and magic prayers          - Charter ships and traders"
+  },
+  {
+    "date": "SEPTEMBER_2006",
+    "regions": [14385,14386,14387,14388,14132],
+    "skills": null,
+    "prayers": null,
+    "quests": ["DARKNESS_OF_HALLOWVALE","SLUG_MENACE"],
+    "spells": ["LUMBRIDGE_HOME_TELEPORT"],
+    "description": "September 2006:        - Darkness of Hallowvale quest       - Slug Menace quest    - Meiyerditch (not Darkmeyer or ToB)        - Witchvale       - Proselyte armor      - Fishing platform"
+  },
+  {
+    "date": "OCTOBER_2006",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": ["ELEMENTAL_WORKSHOP_II","MY_ARM'S_BIG_ADVENTURE"],
+    "spells": null,
+    "description": "October 2006:        - Elemental Workshop II quest         - Mind shield         - Achievement Capes       - Desert Goats        - Combat Potion         - POH Costume Room       - Disease free herb patch"
+  },
+  {
+    "date": "NOVEMBER_2006",
+    "regions": [10029,10285,10811,9270,9017,9271,9528,9529,8761,8505,8249,8250,8506,8762,9018,9274,9530],
+    "skills": ["HUNTER"],
+    "prayers": null,
+    "quests": ["ENLIGHTENED_JOURNEY","EAGLES'_PEAK"],
+    "spells": null,
+    "description": "November 2006:          - Hunter skill      - Eagles' Peak quest    - Eagle transports  - New Hunter areas (Feldip Hills, Polar Hunter area,  - Enlightened Journey quest        - Tree patch in Gnome Stronghold        - 24 more bank slots       - Chinchompas up to red"
+  },
+  {
+    "date": "DECEMBER_2006",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": ["ANIMAL_MAGNETISM"],
+    "spells": null,
+    "description": "December 2006:        - Treasure Trails update, 3rd age armors           - Guthix, Sara, Zammy blessed dhide armor     - Animal Magnetism quest          - Ava's Attractor and Accumulator"
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2006 to 2007"
+  },
+  {
+    "date": "JANUARY_2007",
+    "regions": [8256,8255,8512,8511,8768,8767,9024,9023,9280,9279,9278,9277,9536,9535,9534,9533,9792,9791,9790,10048,10047,10046,10304,10303,10302,10560,10559,10558,10816,10815,10814,11072,11071,11070,11584,11583,11840,11839,12096,12095,12352,12351,12608,12607,12864,12863,13120,13119,13376,13375,13632,15416,15415,15414,10279,10535,10791,11047,11303,11559,11815,12071,8243,8242,8241,8240,10540,10539,10283,10027,10026,10025,10024,10023],
+    "skills": null,
+    "prayers": null,
+    "quests": ["CONTACT!","THE_LAIR_OF_TARN_RAZORLOR","COLD_WAR"],
+    "spells": null,
+    "description": "January 2007:        - Barbarian Assault           - Contact! quest       - Cold War quest     - Penguin Agility       - The Lair of Tarn Razorlor miniquest"
+  },
+  {
+    "date": "FEBRUARY_2007",
+    "regions": [9276,9275,9532,9531],
+    "skills": null,
+    "prayers": null,
+    "quests": ["THE_FREMENNIK_ISLES","THE_TOWER_OF_LIFE"],
+    "spells": null,
+    "description": "February 2007:      - Fremennik Isles quest          - The Tower of Life quest     - Helm on Neitiznot     - Sorceress' Garden"
+  },
+  {
+    "date": "MARCH_2007",
+    "regions": [14380,14379,14378,14636,14635,14634,14892,14891,14890,15148,15147,15146,15404,15403,15402],
+    "skills": null,
+    "prayers": null,
+    "quests": ["THE_GREAT_BRAIN_ROBBERY","WHAT_LIES_BELOW"],
+    "spells": null,
+    "description": "March 2007:        - The Great Brain Robbery quest      - Burgh de Rott Ramble        - Fishing Trawler        - Dorgesh-Kaan         - Harmony Island"
+  },
+  {
+    "date": "APRIL_2007",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": ["OLAF'S_QUEST","ANOTHER_SLICE_OF_H.A.M."],
+    "spells": null,
+    "description": "April 2007:        - Olaf's Quest quest        - Another Slice of H.A.M quest       - Enchanted Bracelets (sapphire, emerald, ruby, diamond, dragonstone, onyx)     - 4 new enchanted necklaces (digsite, pheonix, skills, berserker)"
+  },
+  {
+    "date": "MAY_2007",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": ["THE_DREAM_MENTOR"],
+    "spells": ["MONSTER_EXAMINE","HUMIDIFY","HUNTER_KIT","STAT_SPY","DREAM","PLANK_MAKE","SPELLBOOK_SWAP"],
+    "description": "May 2007:        - Achievement Diaries (starting with Karamja easy through hard)       - The Dream Mentor quest     - 7 new lunar spells        - Varrock museum kudos"
+  },
+  {
+    "date": "JUNE_2007",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": ["GRIM_TALES"],
+    "spells": null,
+    "description": "June 2007:       - Grim Tales quest      - Puro Puro and implings (except lucky and crystal)          - Dragon arrows and darts      - Dark bow          - Draconic visage and Dragonfire shield"
+  },
+  {
+    "date": "JULY_2007",
+    "regions": [],
+    "skills": null,
+    "prayers": ["CHIVALRY","PIETY"],
+    "quests": ["BARBARIAN_TRAINING","KING'S_RANSOM"],
+    "spells": null,
+    "description": "July 2007:        - Barbarian Training miniquest       - King's Ransom quest        - Chivalry and Piety prayers       - Mithril dragons      - Dragon full helm       - Pest control updates: 3 different boats, Void armor helmets"
+  },
+  {
+    "date": "AUGUST_2007",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "August 2007:    - Clan chat          - This is the final update that current OSRS was based off of. See you in 2013!"
+  },
+  {
+    "date": "2013: The start of OSRS",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2013: The Start of OSRS"
+  },
+  {
+    "date": "JANUARY_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2013",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2013 to 2014"
+  },
+  {
+    "date": "JANUARY_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2014",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2014 to 2015"
+  },
+  {
+    "date": "JANUARY_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2015",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2015 to 2016"
+  },
+  {
+    "date": "JANUARY_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2016",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2016 to 2017"
+  },
+  {
+    "date": "JANUARY_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2017",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2017 to 2018"
+  },
+  {
+    "date": "JANUARY_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2018",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2018 to 2019"
+  },
+  {
+    "date": "JANUARY_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2019",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2019 to 2020"
+  },
+  {
+    "date": "JANUARY_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2020",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "---",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": "2020 to 2021"
+  },
+  {
+    "date": "JANUARY_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "FEBRUARY_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MARCH_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "APRIL_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "MAY_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JUNE_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "JULY_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "AUGUST_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "SEPTEMBER_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "OCTOBER_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "NOVEMBER_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
+  },
+  {
+    "date": "DECEMBER_2021",
+    "regions": [],
+    "skills": null,
+    "prayers": null,
+    "quests": null,
+    "spells": null,
+    "description": ""
   }
-	
 ]
